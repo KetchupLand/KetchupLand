@@ -221,6 +221,13 @@ register_node('nodes:mese_node', {
 	is_ground_content = true
 })
 
+register_node('nodes:ruby_node', {
+	description = 'Ruby Node',
+	tiles = { 'ruby_node_texture.png' },
+	groups = { cracky = 3 },
+	is_ground_content = true
+})
+
 register_node('nodes:iron_ore', {
 	description = 'Iron Ore',
 	drop = 'items:iron',
@@ -337,6 +344,15 @@ minetest.register_craft({
 		{"items:mese", "items:mese", "items:mese"},
 		{"items:mese", "items:mese", "items:mese"},
 		{"items:mese", "items:mese", "items:mese"},
+	}
+})
+
+minetest.register_craft({
+	output = "nodes:ruby_node",
+	recipe = {
+		{"items:ruby", "items:ruby", "items:ruby"},
+		{"items:ruby", "items:ruby", "items:ruby"},
+		{"items:ruby", "items:ruby", "items:ruby"},
 	}
 })
 
