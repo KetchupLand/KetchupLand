@@ -3,57 +3,57 @@ local register_alias = minetest.register_alias
 
 
 register_node('nodes:stone', {
-    description = 'Stone',
-    tiles = { 'stone_texture.png' },
-    groups = { cracky = 3 },
-    is_ground_content = true
+	description = 'Stone',
+	tiles = { 'stone_texture.png' },
+	groups = { cracky = 3 },
+	is_ground_content = true
 })
 
 register_node('nodes:lapis', {
-    description = 'Lapis',
-    tiles = { 'lapis_texture.png' },
-    groups = { cracky = 3 },
-    is_ground_content = true
+	description = 'Lapis',
+	tiles = { 'lapis_texture.png' },
+	groups = { cracky = 3 },
+	is_ground_content = true
 })
 
 register_node('nodes:obsidian', {
-    description = 'Obsidian',
-    tiles = { 'obsidian_texture.png' },
-    groups = { cracky = 3 },
-    is_ground_content = true
+	description = 'Obsidian',
+	tiles = { 'obsidian_texture.png' },
+	groups = { cracky = 3 },
+	is_ground_content = true
 })
 
 register_node('nodes:lapis', {
-    description = 'Lapis',
-    tiles = { 'lapis_texture.png' },
-    groups = { cracky = 3 },
-    is_ground_content = true
+	description = 'Lapis',
+	tiles = { 'lapis_texture.png' },
+	groups = { cracky = 3 },
+	is_ground_content = true
 })
 
 register_node('nodes:leaves', {
-    description = 'Leaves',
-    tiles = { 'leaves_texture.png' },
-    groups = { oddly_breakable_by_hand = 3 },
-    is_ground_content = true
+	description = 'Leaves',
+	tiles = { 'leaves_texture.png' },
+	groups = { oddly_breakable_by_hand = 3 },
+	is_ground_content = true
 })
 
 register_node('nodes:bush', {
-    description = 'Bush',
+	description = 'Bush',
 	drawtype = "allfaces_optional",
 	paramtype = "light",
-    tiles = { 'leaves_texture.png' },
-    groups = { oddly_breakable_by_hand = 3 },
-    is_ground_content = true,
+	tiles = { 'leaves_texture.png' },
+	groups = { oddly_breakable_by_hand = 3 },
+	is_ground_content = true,
 	walkable = false
 })
 
 register_node('nodes:glass', {
-    description = 'Glass',
+	description = 'Glass',
 	drawtype = "glasslike",
 	paramtype = "light",
-    tiles = { 'glass_texture.png' },
-    groups = { oddly_breakable_by_hand = 3 },
-    is_ground_content = true
+	tiles = { 'glass_texture.png' },
+	groups = { oddly_breakable_by_hand = 3 },
+	is_ground_content = true
 })
 
 minetest.register_node('nodes:torch', {
@@ -67,7 +67,7 @@ minetest.register_node('nodes:torch', {
 	walkable = false,
 	groups = { oddly_breakable_by_hand = 3 },
 	buildable_to = true,
-    light_source = 10,
+	light_source = 10,
 })
 
 minetest.register_node('nodes:rope', {
@@ -78,7 +78,7 @@ minetest.register_node('nodes:rope', {
 	wield_image = 'rope_texture.png',
 	sunlight_propagates = true,
 	walkable = false,
-    climbable = true,
+	climbable = true,
 	groups = { oddly_breakable_by_hand = 3 },
 })
 
@@ -90,157 +90,157 @@ minetest.register_node('nodes:stone_spike', {
 	wield_image = 'stone_spike_texture.png',
 	sunlight_propagates = true,
 	walkable = false,
-                  climbable = false,
+				  climbable = false,
 	groups = { cracky = 3 },
 	damage_per_second = 15,
 })
 
 register_node('nodes:leaves_with_tomato', {
-    description = 'Leaves with Tomato',
-    drop = 'items:tomato',
-    tiles = { 'leaves_with_tomato_texture.png' },
-    groups = { oddly_breakable_by_hand = 3 },
-    is_ground_content = true
+	description = 'Leaves with Tomato',
+	drop = 'items:tomato',
+	tiles = { 'leaves_with_tomato_texture.png' },
+	groups = { oddly_breakable_by_hand = 3 },
+	is_ground_content = true
 })
 
 register_node('nodes:tree', {
-    description = 'Tree',
-    tiles = { 'tree_texture.png' },
-    groups = { oddly_breakable_by_hand = 2 },
-    is_ground_content = true
+	description = 'Tree',
+	tiles = { 'tree_texture.png' },
+	groups = { oddly_breakable_by_hand = 2 },
+	is_ground_content = true
 })
 
 register_node('nodes:planks', {
-    description = 'Planks',
-    tiles = { 'planks_texture.png' },
-    groups = { oddly_breakable_by_hand = 2 },
-    is_ground_content = true
+	description = 'Planks',
+	tiles = { 'planks_texture.png' },
+	groups = { oddly_breakable_by_hand = 2 },
+	is_ground_content = true
 })
 
 register_node('nodes:dirt_with_grass', {
-    description = 'Dirt with Grass',
-    tiles = { 'grass_texture.png' },
-    groups = { crumbly = 3 },
-    is_ground_content = true
+	description = 'Dirt with Grass',
+	tiles = { 'grass_texture.png' },
+	groups = { crumbly = 3 },
+	is_ground_content = true
 })
 
 register_node('nodes:rocky_dirt', {
-    description = 'Dirt with Rocks',
-    tiles = { 'rocky_dirt_texture.png' },
-    groups = { crumbly = 3 },
-    is_ground_content = true
+	description = 'Dirt with Rocks',
+	tiles = { 'rocky_dirt_texture.png' },
+	groups = { crumbly = 3 },
+	is_ground_content = true
 })
 
 register_node('nodes:dirt', {
-    description = 'Dirt',
-    tiles = { 'dirt_texture.png' },
-    groups = { crumbly = 3 },
-    is_ground_content = true
+	description = 'Dirt',
+	tiles = { 'dirt_texture.png' },
+	groups = { crumbly = 3 },
+	is_ground_content = true
 })
 
 register_node('nodes:ruby_ore', {
-    description = 'Ruby Ore',
-    drop = 'items:ruby',
-    tiles = { 'ruby_ore_texture.png' },
-    groups = { cracky = 3 },
-    is_ground_content = true
+	description = 'Ruby Ore',
+	drop = 'items:ruby',
+	tiles = { 'ruby_ore_texture.png' },
+	groups = { cracky = 3 },
+	is_ground_content = true
 })
 
 register_node('nodes:sand', {
-    description = 'Sand',
-    tiles = { 'sand_texture.png' },
-    groups = { crumbly = 3, falling_node = 1 },
-    is_ground_content = true
+	description = 'Sand',
+	tiles = { 'sand_texture.png' },
+	groups = { crumbly = 3, falling_node = 1 },
+	is_ground_content = true
 })
 
 register_node('nodes:sandstone', {
-    description = 'Sandstone',
-    tiles = { 'sandstone_texture.png' },
-    groups = { cracky = 3 },
-    is_ground_content = true
+	description = 'Sandstone',
+	tiles = { 'sandstone_texture.png' },
+	groups = { cracky = 3 },
+	is_ground_content = true
 })
 
 register_node('nodes:cobalt_ore', {
-    description = 'Cobalt Ore',
-    drop = 'items:cobalt',
-    tiles = { 'cobalt_ore_texture.png' },
-    groups = { cracky = 3 },
-    is_ground_content = true
+	description = 'Cobalt Ore',
+	drop = 'items:cobalt',
+	tiles = { 'cobalt_ore_texture.png' },
+	groups = { cracky = 3 },
+	is_ground_content = true
 })
 
 register_node('nodes:ruby_ore', {
-    description = 'Ruby Ore',
-    drop = 'items:ruby',
-    tiles = { 'ruby_ore_texture.png' },
-    groups = { cracky = 3 },
-    is_ground_content = true
+	description = 'Ruby Ore',
+	drop = 'items:ruby',
+	tiles = { 'ruby_ore_texture.png' },
+	groups = { cracky = 3 },
+	is_ground_content = true
 })
 
 register_node('nodes:coal_ore', {
-    description = 'Coal Ore',
-    drop = 'items:coal',
-    tiles = { 'coal_ore_texture.png' },
-    groups = { cracky = 3 },
-    is_ground_content = true
+	description = 'Coal Ore',
+	drop = 'items:coal',
+	tiles = { 'coal_ore_texture.png' },
+	groups = { cracky = 3 },
+	is_ground_content = true
 })
 
 register_node('nodes:jade_ore', {
-    description = 'Jade Ore',
-    drop = 'items:jade',
-    tiles = { 'jade_ore_texture.png' },
-    groups = { cracky = 3 },
-    is_ground_content = true
+	description = 'Jade Ore',
+	drop = 'items:jade',
+	tiles = { 'jade_ore_texture.png' },
+	groups = { cracky = 3 },
+	is_ground_content = true
 })
 
 register_node('nodes:cobalt_node', {
-    description = 'Cobalt Node',
-    tiles = { 'cobalt_node_texture.png' },
-    groups = { cracky = 3 },
-    is_ground_content = true
+	description = 'Cobalt Node',
+	tiles = { 'cobalt_node_texture.png' },
+	groups = { cracky = 3 },
+	is_ground_content = true
 })
 
 register_node('nodes:jade_node', {
-    description = 'Jade Node',
-    tiles = { 'jade_node_texture.png' },
-    groups = { cracky = 3 },
-    is_ground_content = true
+	description = 'Jade Node',
+	tiles = { 'jade_node_texture.png' },
+	groups = { cracky = 3 },
+	is_ground_content = true
 })
 
 register_node('nodes:mese_ore', {
-    description = 'Mese Ore',
-    drop = 'items:mese',
-    tiles = { 'mese_ore_texture.png' },
-    groups = { cracky = 3 },
-    is_ground_content = true
+	description = 'Mese Ore',
+	drop = 'items:mese',
+	tiles = { 'mese_ore_texture.png' },
+	groups = { cracky = 3 },
+	is_ground_content = true
 })
 
 register_node('nodes:mese_node', {
-    description = 'Mese Node',
-    tiles = { 'mese_node_texture.png' },
-    groups = { cracky = 3 },
-    is_ground_content = true
+	description = 'Mese Node',
+	tiles = { 'mese_node_texture.png' },
+	groups = { cracky = 3 },
+	is_ground_content = true
 })
 
 register_node('nodes:iron_ore', {
-    description = 'Iron Ore',
-    drop = 'items:iron',
-    tiles = { 'iron_ore_texture.png' },
-    groups = { cracky = 3 },
-    is_ground_content = true
+	description = 'Iron Ore',
+	drop = 'items:iron',
+	tiles = { 'iron_ore_texture.png' },
+	groups = { cracky = 3 },
+	is_ground_content = true
 })
 
 register_node('nodes:stone_bricks', {
-    description = 'Stone Bricks',
-    tiles = { 'stone_bricks_texture.png' },
-    groups = { cracky = 3 },
-    is_ground_content = true
+	description = 'Stone Bricks',
+	tiles = { 'stone_bricks_texture.png' },
+	groups = { cracky = 3 },
+	is_ground_content = true
 })
 
 register_node('nodes:sandstone_bricks', {
-    description = 'Sandstone Bricks',
-    tiles = { 'sandstone_bricks_texture.png' },
-    groups = { cracky = 3 },
-    is_ground_content = true
+	description = 'Sandstone Bricks',
+	tiles = { 'sandstone_bricks_texture.png' },
+	groups = { cracky = 3 },
+	is_ground_content = true
 })
 
 minetest.register_node("nodes:water_source", {
@@ -332,72 +332,72 @@ minetest.register_node("nodes:water_flowing", {
 --crafting
 
 minetest.register_craft({
-    output = "nodes:mese_node",
-    recipe = {
-        {"items:mese", "items:mese", "items:mese"},
-        {"items:mese", "items:mese", "items:mese"},
-        {"items:mese", "items:mese", "items:mese"},
-    }
+	output = "nodes:mese_node",
+	recipe = {
+		{"items:mese", "items:mese", "items:mese"},
+		{"items:mese", "items:mese", "items:mese"},
+		{"items:mese", "items:mese", "items:mese"},
+	}
 })
 
 minetest.register_craft({
-    output = "nodes:stone_bricks",
-    recipe = {
-        {"items:stone", "items:stone", "items:stone"},
-        {"items:stone", "items:stone", "items:stone"},
-        {"items:stone", "items:stone", "items:stone"},
-    }
+	output = "nodes:stone_bricks",
+	recipe = {
+		{"items:stone", "items:stone", "items:stone"},
+		{"items:stone", "items:stone", "items:stone"},
+		{"items:stone", "items:stone", "items:stone"},
+	}
 })
 
 minetest.register_craft({
-    output = "nodes:sandstone_bricks",
-    recipe = {
-        {"items:sandstone", "items:sandstone", "items:sandstone"},
-        {"items:sandstone", "items:sandstone", "items:sandstone"},
-        {"items:sandstone", "items:sandstone", "items:sandstone"},
-    }
+	output = "nodes:sandstone_bricks",
+	recipe = {
+		{"items:sandstone", "items:sandstone", "items:sandstone"},
+		{"items:sandstone", "items:sandstone", "items:sandstone"},
+		{"items:sandstone", "items:sandstone", "items:sandstone"},
+	}
 })
 
 minetest.register_craft({
-    output = "nodes:cobalt_node",
-    recipe = {
-        {"items:cobalt", "items:cobalt", "items:cobalt"},
-        {"items:cobalt", "items:cobalt", "items:cobalt"},
-        {"items:cobalt", "items:cobalt", "items:cobalt"},
-    }
+	output = "nodes:cobalt_node",
+	recipe = {
+		{"items:cobalt", "items:cobalt", "items:cobalt"},
+		{"items:cobalt", "items:cobalt", "items:cobalt"},
+		{"items:cobalt", "items:cobalt", "items:cobalt"},
+	}
 })
 
 minetest.register_craft({
-    output = "nodes:jade_node",
-    recipe = {
-        {"items:jade", "items:jade", "items:jade"},
-        {"items:jade", "items:jade", "items:jade"},
-        {"items:jade", "items:jade", "items:jade"},
-    }
+	output = "nodes:jade_node",
+	recipe = {
+		{"items:jade", "items:jade", "items:jade"},
+		{"items:jade", "items:jade", "items:jade"},
+		{"items:jade", "items:jade", "items:jade"},
+	}
 })
 
 minetest.register_craft({
-    output = "nodes:torch",
-    recipe = {
-        {"items:coal"},
-        {"items:stick"},
-    }
+	output = "nodes:torch",
+	recipe = {
+		{"items:coal"},
+		{"items:stick"},
+	}
 })
 
 minetest.register_craft({
-    output = "nodes:rope 3",
-    recipe = {
-        {"nodes:leaves"},
-        {"nodes:leaves"},
-    }
+	output = "nodes:rope 3",
+	recipe = {
+		{"nodes:leaves"},
+		{"nodes:leaves"},
+	}
 })
 
 minetest.register_craft({
-    output = "nodes:grass",
-    recipe = {
-        {"nodes:sand"},
-        {"nodes:torch"},
-    }
+	output = "nodes:grass",
+	recipe = {
+		{"nodes:sand"},
+		{"nodes:torch"},
+	}
 })
 
 

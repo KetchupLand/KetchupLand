@@ -4,15 +4,15 @@ minetest.register_on_joinplayer(function(player)
 		visual_size = { x = 1, y = 1.5 },
 		textures = { "player.png", "player_back.png" },
 	})
-                  player:set_sky({
+				  player:set_sky({
 		base_color = "#000080",
 		type = 'plain',
 		clouds = false
 	})
-                  player:set_sun({
+				  player:set_sun({
 		texture = "sun.png"
 	})
-                  player:set_moon({
+				  player:set_moon({
 		texture = "moon.png"
 	})
 end)
