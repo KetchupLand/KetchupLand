@@ -41,12 +41,30 @@ minetest.register_craftitem("items:tomato", {
 	on_use = minetest.item_eat(5),
 })
 
+minetest.register_craftitem("items:bottle", {
+	description = "Bottle",
+	inventory_image = "bottle_texture.png",
+})
+
+minetest.register_craftitem("items:ketchup_bottle", {
+	description = "Bottle with Ketchup",
+	inventory_image = "bottle_with_ketchup_texture.png",
+	on_use = minetest.item_eat(7),
+})
 
 minetest.register_craft({
 	output = "items:stick 4",
 	recipe = {
-		{"", "nodes:tree", ""},
-		{"", "nodes:tree", ""},
+		{"nodes:tree"},
+		{"nodes:tree"},
+	}
+})
+
+minetest.register_craft({
+	output = "items:ketchup_bottle",
+	recipe = {
+		{"items:tomato"},
+		{"items:bottle"},
 	}
 })
 
@@ -115,6 +133,15 @@ minetest.register_craft({
 		{"items:rock", "items:rock", "items:rock"},
 		{"", "items:stick", ""},
 		{"", "items:stick", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "items:mese_pickaxe",
+	recipe = {
+		{"items:ketchup_bottle", "items:ketchup_bottle", "items:ketchup_bottle"},
+		{"", "items:ketchup_bottle", ""},
+		{"", "items:ketchup_bottle", ""},
 	}
 })
 
@@ -293,6 +320,32 @@ minetest.register_craftitem("items:mese_pickaxe", {
 			},
 			cracky = {
 				times = {[1] = 0.75, [2] = 0.75, [3] = 0.75},
+				uses = 0,
+			},
+		},
+		damage_groups = {fleshy = 1},
+	}
+})
+
+minetest.register_craftitem("items:ketchup_pickaxe", {
+	description = "Ketchup Pickaxe",
+	inventory_image = "ketchup_pickaxe_texture.png",
+	tool_capabilities = {
+		full_punch_interval = 0.5,
+		max_drop_level = 0,
+		groupcaps = {
+			crumbly = {
+				times = {[2] = 3.00, [3] = 0.70},
+				uses = 0,
+				maxlevel = 1,
+			},
+			snappy = {
+				times = {[3] = 0.40},
+				uses = 0,
+				maxlevel = 1,
+			},
+			cracky = {
+				times = {[1] = 2.50, [2] = 2.50, [3] = 2.50},
 				uses = 0,
 			},
 		},

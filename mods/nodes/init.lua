@@ -341,6 +341,15 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
+	output = "items:bottle",
+	recipe = {
+		{"nodes:glass", "", "nodes:glass"},
+		{"nodes:glass", "", "nodes:glass"},
+		{"", "nodes:glass", ""},
+	}
+})
+
+minetest.register_craft({
 	output = "nodes:stone_bricks",
 	recipe = {
 		{"items:stone", "items:stone", "items:stone"},
