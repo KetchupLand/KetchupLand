@@ -119,7 +119,7 @@ register_node('nodes:planks', {
 
 register_node('nodes:dirt_with_grass', {
 	description = 'Dirt with Grass',
-	tiles = { 'grass_texture.png' },
+	tiles = { 'grass_texture.png', 'dirt_texture.png', 'grass_side_texture.png' },
 	groups = { crumbly = 3 },
 	is_ground_content = true
 })
