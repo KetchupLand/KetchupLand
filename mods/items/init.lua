@@ -361,6 +361,13 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
+	output = "items:stick",
+	recipe = {
+		{"nodes:bush",},
+	}
+})
+
+minetest.register_craft({
 	output = "items:rock",
 	recipe = {
 		{"nodes:rocky_dirt",},
