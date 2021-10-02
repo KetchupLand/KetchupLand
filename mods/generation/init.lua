@@ -287,7 +287,7 @@ minetest.register_decoration({
 	biomes = {"forest","plains"},
 	height = 0,
 	y_min = 0,
-	y_max = 1000,
+	y_max = 32000,
 	place_offset_y = math.random(-1,-2),
 	schematic = "boulder.mts",
 	flags = "place_center_x, place_center_z, force_placement",
