@@ -15,6 +15,20 @@ minetest.register_biome({
 })
 
 minetest.register_biome({
+	name = "plains",
+	node_top = "nodes:dirt_with_grass",
+	depth_top = 1,
+	node_filler = "nodes:dirt",
+	depth_filler = 3,
+	node_riverbed = "nodes:stone",
+	depth_riverbed = 2,
+	y_max = 31000,
+	y_min = 5,
+	heat_point = 48,
+	humidity_point = 9,
+})
+
+minetest.register_biome({
 	name = "beach",
 	node_top = "nodes:sand",
 	depth_top = 2,
@@ -237,7 +251,7 @@ minetest.register_decoration({
 	place_on = "nodes:dirt_with_grass",
 	sidelen = 16,
 	fill_ratio = 0.008,
-	biomes = {"forest"},
+	biomes = {"forest", "plains"},
 		noise_params = {
 		offset = 0.01,
 		scale = 0.008,
@@ -249,6 +263,37 @@ minetest.register_decoration({
 	y_min = 1,
 	y_max = 80,
 })
+
+minetest.register_decoration({
+	deco_type = "schematic",
+	place_on = "nodes:dirt_with_grass",
+	sidelen = 4,
+	fill_ratio = 0.001,
+	biomes = {"plains"},
+	height = 2,
+	y_min = 0,
+	y_max = 1000,
+	place_offset_y = 0,
+	schematic = "tree.mts",
+	flags = "place_center_x, place_center_z, force_placement",
+	rotation = "random",
+}) 
+
+minetest.register_decoration({
+	deco_type = "schematic",
+	place_on = "nodes:dirt_with_grass",
+	sidelen = 16,
+	fill_ratio = 0.002,
+	biomes = {"forest","plains"},
+	height = 0,
+	y_min = 0,
+	y_max = 1000,
+	place_offset_y = math.random(-1,-2),
+	schematic = "boulder.mts",
+	flags = "place_center_x, place_center_z, force_placement",
+	rotation = "random",
+})
+
 
 minetest.register_decoration({
 	deco_type = "schematic",
