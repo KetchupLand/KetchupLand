@@ -249,6 +249,21 @@ minetest.register_decoration({
 	y_min = 1,
 	y_max = 80,
 })
+
+minetest.register_decoration({
+	deco_type = "schematic",
+	place_on = "nodes:dirt_with_grass",
+	sidelen = 16,
+	biomes = {"forest"},
+	height = 2,
+	y_min = 0,
+	y_max = 1000,
+	place_offset_y = 0,
+	schematic = "tree.mts",
+	flags = "place_center_x, place_center_z, force_placement",
+	rotation = "random",
+}) 
+
 minetest.register_decoration({
 	decoration = "nodes:stone_spike",
 	deco_type = "simple",
