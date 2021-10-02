@@ -40,6 +40,11 @@ minetest.register_craftitem("items:tomato", {
 	inventory_image = "tomato_texture.png",
 	on_use = minetest.item_eat(5),
 })
+minetest.register_craftitem("items:chili_tomato", {
+	description = "Chili Tomato",
+	inventory_image = "chili_tomato_texture.png",
+	on_use = minetest.item_eat(-1),
+})
 
 minetest.register_craftitem("items:bottle", {
 	description = "Bottle",
@@ -50,6 +55,12 @@ minetest.register_craftitem("items:ketchup_bottle", {
 	description = "Bottle with Ketchup",
 	inventory_image = "bottle_with_ketchup_texture.png",
 	on_use = minetest.item_eat(7),
+})
+
+minetest.register_craftitem("items:chili_ketchup_bottle", {
+	description = "Bottle with Chili Ketchup",
+	inventory_image = "bottle_with_ketchup_texture.png",
+	on_use = minetest.item_eat(10),
 })
 
 minetest.register_craft({
@@ -69,9 +80,24 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
+	output = "items:chili_ketchup_bottle",
+	recipe = {
+		{"items:chili_tomato"},
+		{"items:bottle"},
+	}
+})
+
+minetest.register_craft({
 	output = "nodes:planks 4",
 	recipe = {
 		{"", "nodes:tree", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "nodes:volcanic_planks 4",
+	recipe = {
+		{"", "nodes:volcanic_tree", ""},
 	}
 })
 

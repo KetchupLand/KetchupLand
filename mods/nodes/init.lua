@@ -37,6 +37,13 @@ register_node('nodes:leaves', {
 	is_ground_content = true
 })
 
+register_node('nodes:volcanic_leaves', {
+	description = 'Volcanic Leaves',
+	tiles = { 'volcanic_leaves_texture.png' },
+	groups = { oddly_breakable_by_hand = 3 },
+	is_ground_content = true
+})
+
 register_node('nodes:bush', {
 	description = 'Bush',
 	drawtype = "allfaces_optional",
@@ -110,9 +117,31 @@ register_node('nodes:tree', {
 	is_ground_content = true
 })
 
+register_node('nodes:volcanic_leaves_with_chili_tomato', {
+	description = 'Volcanic Leaves with Chili Tomato',
+	drop = 'items:chili_tomato',
+	tiles = { 'volcanic_leaves_with_chili_tomato_texture.png' },
+	groups = { oddly_breakable_by_hand = 3 },
+	is_ground_content = true
+})
+
+register_node('nodes:volcanic_tree', {
+	description = 'Volcanic Tree',
+	tiles = { 'volcanic_tree_texture.png' },
+	groups = { oddly_breakable_by_hand = 2 },
+	is_ground_content = true
+})
+
 register_node('nodes:planks', {
 	description = 'Planks',
 	tiles = { 'planks_texture.png' },
+	groups = { oddly_breakable_by_hand = 2 },
+	is_ground_content = true
+})
+
+register_node('nodes:volcanic_planks', {
+	description = 'Volcanic Planks',
+	tiles = { 'volcanic_planks_texture.png' },
 	groups = { oddly_breakable_by_hand = 2 },
 	is_ground_content = true
 })
@@ -138,6 +167,20 @@ register_node('nodes:dirt', {
 	is_ground_content = true
 })
 
+register_node('nodes:volcanic_rocky_dirt', {
+	description = 'Volcanic Dirt with Rocks',
+	tiles = { 'volcanic_rocky_dirt_texture.png' },
+	groups = { crumbly = 3 },
+	is_ground_content = true
+})
+
+register_node('nodes:volcanic_dirt', {
+	description = 'Volcanic Dirt',
+	tiles = { 'volcanic_dirt_texture.png' },
+	groups = { crumbly = 3 },
+	is_ground_content = true
+})
+
 register_node('nodes:ruby_ore', {
 	description = 'Ruby Ore',
 	drop = 'items:ruby',
@@ -149,6 +192,13 @@ register_node('nodes:ruby_ore', {
 register_node('nodes:sand', {
 	description = 'Sand',
 	tiles = { 'sand_texture.png' },
+	groups = { crumbly = 3, falling_node = 1 },
+	is_ground_content = true
+})
+
+register_node('nodes:ash', {
+	description = 'Volcanic Ash',
+	tiles = { 'ash_texture.png' },
 	groups = { crumbly = 3, falling_node = 1 },
 	is_ground_content = true
 })
@@ -287,7 +337,7 @@ minetest.register_node("nodes:water_source", {
 	liquid_alternative_flowing = "nodes:water_flowing",
 	liquid_alternative_source = "nodes:water_source",
 	liquid_viscosity = 1,
-	post_effect_color = {a = 128, r = 0, g = 0, b = 255},
+	post_effect_color = {a = 128, r = 8, g = 64, b = 138},
 	groups = {water = 3, liquid = 3},
 	waving = 3
 })
@@ -331,8 +381,103 @@ minetest.register_node("nodes:water_flowing", {
 	liquid_alternative_flowing = "nodes:water_flowing",
 	liquid_alternative_source = "nodes:water_source",
 	liquid_viscosity = 1,
-	post_effect_color = {a = 128, r = 0, g = 0, b = 255},
+	post_effect_color = {a = 128, r = 8, g = 64, b = 138},
 	groups = {water = 3, liquid = 3},
+	waving = 3
+})
+
+--lava
+
+minetest.register_node("nodes:lava_source", {
+	description = "Lava Source",
+	drawtype = "liquid",
+	tiles = {
+		{
+			name = "lava_texture.png",
+			backface_culling = false,
+			animation = {
+				type = "vertical_frames",
+				aspect_w = 1,
+				aspect_h = 1,
+				length = 5.0,
+			},
+		},
+		{
+			name = "lava_texture.png",
+			backface_culling = true,
+			animation = {
+				type = "vertical_frames",
+				aspect_w = 1,
+				aspect_h = 1,
+				length = 3,
+			},
+		},
+	},
+	light_source = minetest.LIGHT_MAX,
+	use_texture_alpha = "blend",
+	paramtype = "light",
+	walkable = false,
+	pointable = false,
+	diggable = false,
+	buildable_to = true,
+	is_ground_content = false,
+	drowning = 1,
+	liquid_range = 4,
+	damage_per_second = 6,
+	liquidtype = "source",
+	liquid_alternative_flowing = "nodes:lava_flowing",
+	liquid_alternative_source = "nodes:lava_source",
+	liquid_viscosity = 1,
+	post_effect_color = {a = 200, r = 255, g = 100, b = 0},
+	groups = {lava = 3, liquid = 3},
+	waving = 3
+})
+
+minetest.register_node("nodes:lava_flowing", {
+	description = "Flowing Lava",
+	drawtype = "flowingliquid",
+	tiles = {"lava_flowing.png"},
+	special_tiles = {
+		{
+			name = "lava_flowing.png",
+			backface_culling = false,
+			animation = {
+				type = "vertical_frames",
+				aspect_w = 1,
+				aspect_h = 1,
+				length = 5,
+			},
+		},
+		{
+			name = "lava_flowing.png",
+			backface_culling = false,
+			animation = {
+				type = "vertical_frames",
+				aspect_w = 1,
+				aspect_h = 1,
+				length = 5,
+			},
+		},
+	},
+	light_source = minetest.LIGHT_MAX,
+	use_texture_alpha = "blend",
+	paramtype = "light",
+	paramtype2 = "flowingliquid",
+	walkable = false,
+	pointable = false,
+	diggable = false,
+	buildable_to = true,
+	is_ground_content = false,
+	liquid_viscosity = 50,
+	drowning = 1,
+	liquid_range = 4,
+	damage_per_second = 6,
+	liquidtype = "flowing",
+	liquid_alternative_flowing = "nodes:lava_flowing",
+	liquid_alternative_source = "nodes:lava_source",
+	liquid_viscosity = 1,
+	post_effect_color = {a = 200, r = 255, g = 100, b = 0},
+	groups = {lava = 3, liquid = 3},
 	waving = 3
 })
 
