@@ -1,5 +1,7 @@
 local register_item = minetest.register_item
 
+--ores
+
 minetest.register_craftitem("items:ruby", {
 	description = "Ruby",
 	inventory_image = "ruby_texture.png",
@@ -35,6 +37,8 @@ minetest.register_craftitem("items:rock", {
 	inventory_image = "rock_texture.png",
 })
 
+--tomatoes
+
 minetest.register_craftitem("items:tomato", {
 	description = "Tomato",
 	inventory_image = "tomato_texture.png",
@@ -45,6 +49,8 @@ minetest.register_craftitem("items:chili_tomato", {
 	inventory_image = "chili_tomato_texture.png",
 	on_use = minetest.item_eat(-1),
 })
+
+--ketchup
 
 minetest.register_craftitem("items:bottle", {
 	description = "Bottle",
@@ -62,6 +68,8 @@ minetest.register_craftitem("items:chili_ketchup_bottle", {
 	inventory_image = "bottle_with_ketchup_texture.png",
 	on_use = minetest.item_eat(10),
 })
+
+--crafting
 
 minetest.register_craft({
 	output = "items:stick 4",
@@ -170,6 +178,50 @@ minetest.register_craft({
 		{"", "items:ketchup_bottle", ""},
 	}
 })
+
+minetest.register_craft({
+	output = "items:stick",
+	recipe = {
+		{"nodes:leaves",},
+	}
+})
+
+minetest.register_craft({
+	output = "items:stick",
+	recipe = {
+		{"nodes:volcanic_leaves",},
+	}
+})
+
+minetest.register_craft({
+	output = "items:stick",
+	recipe = {
+		{"nodes:bush",},
+	}
+})
+
+minetest.register_craft({
+	output = "items:rock",
+	recipe = {
+		{"nodes:rocky_dirt",},
+	}
+})
+
+minetest.register_craft({
+	output = "items:rock",
+	recipe = {
+		{"nodes:dirt_with_grass",},
+	}
+})
+
+minetest.register_craft({
+	output = "items:rock",
+	recipe = {
+		{"nodes:volcanic_dirt_with_grass",},
+	}
+})
+
+--tools
 
 minetest.register_craftitem("items:stick", {
 	description = "Stick",
@@ -376,33 +428,5 @@ minetest.register_craftitem("items:ketchup_pickaxe", {
 			},
 		},
 		damage_groups = {fleshy = 1},
-	}
-})
-
-minetest.register_craft({
-	output = "items:stick",
-	recipe = {
-		{"nodes:leaves",},
-	}
-})
-
-minetest.register_craft({
-	output = "items:stick",
-	recipe = {
-		{"nodes:bush",},
-	}
-})
-
-minetest.register_craft({
-	output = "items:rock",
-	recipe = {
-		{"nodes:rocky_dirt",},
-	}
-})
-
-minetest.register_craft({
-	output = "items:rock",
-	recipe = {
-		{"nodes:dirt_with_grass",},
 	}
 })

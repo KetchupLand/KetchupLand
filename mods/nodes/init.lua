@@ -1,6 +1,7 @@
 local register_node = minetest.register_node
 local register_alias = minetest.register_alias
 
+--cracky/hard stone like nodes
 
 register_node('nodes:stone', {
 	description = 'Stone',
@@ -23,72 +24,6 @@ register_node('nodes:obsidian', {
 	is_ground_content = true
 })
 
-register_node('nodes:lapis', {
-	description = 'Lapis',
-	tiles = { 'lapis_texture.png' },
-	groups = { cracky = 3 },
-	is_ground_content = true
-})
-
-register_node('nodes:leaves', {
-	description = 'Leaves',
-	tiles = { 'leaves_texture.png' },
-	groups = { oddly_breakable_by_hand = 3 },
-	is_ground_content = true
-})
-
-register_node('nodes:volcanic_leaves', {
-	description = 'Volcanic Leaves',
-	tiles = { 'volcanic_leaves_texture.png' },
-	groups = { oddly_breakable_by_hand = 3 },
-	is_ground_content = true
-})
-
-register_node('nodes:bush', {
-	description = 'Bush',
-	drawtype = "allfaces_optional",
-	paramtype = "light",
-	tiles = { 'leaves_texture.png' },
-	groups = { oddly_breakable_by_hand = 3 },
-	is_ground_content = true,
-	walkable = false
-})
-
-register_node('nodes:glass', {
-	description = 'Glass',
-	drawtype = "glasslike",
-	paramtype = "light",
-	tiles = { 'glass_texture.png' },
-	groups = { oddly_breakable_by_hand = 3 },
-	is_ground_content = true
-})
-
-minetest.register_node('nodes:torch', {
-	description = 'Torch',
-	drawtype = 'plantlike',
-	waving = 1,
-	tiles = { 'torch_texture.png' },
-	inventory_image = 'torch_texture.png',
-	wield_image = 'torch_texture.png',
-	sunlight_propagates = true,
-	walkable = false,
-	groups = { oddly_breakable_by_hand = 3 },
-	buildable_to = true,
-	light_source = 10,
-})
-
-minetest.register_node('nodes:rope', {
-	description = 'Rope',
-	drawtype = 'plantlike',
-	tiles = { 'rope_texture.png' },
-	inventory_image = 'rope_texture.png',
-	wield_image = 'rope_texture.png',
-	sunlight_propagates = true,
-	walkable = false,
-	climbable = true,
-	groups = { oddly_breakable_by_hand = 3 },
-})
-
 minetest.register_node('nodes:stone_spike', {
 	description = 'Stone Spike',
 	drawtype = 'plantlike',
@@ -97,88 +32,8 @@ minetest.register_node('nodes:stone_spike', {
 	wield_image = 'stone_spike_texture.png',
 	sunlight_propagates = true,
 	walkable = false,
-				  climbable = false,
 	groups = { cracky = 3 },
-	damage_per_second = 15,
-})
-
-register_node('nodes:leaves_with_tomato', {
-	description = 'Leaves with Tomato',
-	drop = 'items:tomato',
-	tiles = { 'leaves_with_tomato_texture.png' },
-	groups = { oddly_breakable_by_hand = 3 },
-	is_ground_content = true
-})
-
-register_node('nodes:tree', {
-	description = 'Tree',
-	tiles = { 'tree_texture.png' },
-	groups = { oddly_breakable_by_hand = 2 },
-	is_ground_content = true
-})
-
-register_node('nodes:volcanic_leaves_with_chili_tomato', {
-	description = 'Volcanic Leaves with Chili Tomato',
-	drop = 'items:chili_tomato',
-	tiles = { 'volcanic_leaves_with_chili_tomato_texture.png' },
-	groups = { oddly_breakable_by_hand = 3 },
-	is_ground_content = true
-})
-
-register_node('nodes:volcanic_tree', {
-	description = 'Volcanic Tree',
-	tiles = { 'volcanic_tree_texture.png' },
-	groups = { oddly_breakable_by_hand = 2 },
-	is_ground_content = true
-})
-
-register_node('nodes:planks', {
-	description = 'Planks',
-	tiles = { 'planks_texture.png' },
-	groups = { oddly_breakable_by_hand = 2 },
-	is_ground_content = true
-})
-
-register_node('nodes:volcanic_planks', {
-	description = 'Volcanic Planks',
-	tiles = { 'volcanic_planks_texture.png' },
-	groups = { oddly_breakable_by_hand = 2 },
-	is_ground_content = true
-})
-
-register_node('nodes:dirt_with_grass', {
-	description = 'Dirt with Grass',
-	tiles = { 'grass_texture.png', 'dirt_texture.png', 'grass_side_texture.png' },
-	groups = { crumbly = 3 },
-	is_ground_content = true
-})
-
-register_node('nodes:rocky_dirt', {
-	description = 'Dirt with Rocks',
-	tiles = { 'rocky_dirt_texture.png' },
-	groups = { crumbly = 3 },
-	is_ground_content = true
-})
-
-register_node('nodes:dirt', {
-	description = 'Dirt',
-	tiles = { 'dirt_texture.png' },
-	groups = { crumbly = 3 },
-	is_ground_content = true
-})
-
-register_node('nodes:volcanic_rocky_dirt', {
-	description = 'Volcanic Dirt with Rocks',
-	tiles = { 'volcanic_rocky_dirt_texture.png' },
-	groups = { crumbly = 3 },
-	is_ground_content = true
-})
-
-register_node('nodes:volcanic_dirt', {
-	description = 'Volcanic Dirt',
-	tiles = { 'volcanic_dirt_texture.png' },
-	groups = { crumbly = 3 },
-	is_ground_content = true
+	damage_per_second = 5,
 })
 
 register_node('nodes:ruby_ore', {
@@ -186,20 +41,6 @@ register_node('nodes:ruby_ore', {
 	drop = 'items:ruby',
 	tiles = { 'ruby_ore_texture.png' },
 	groups = { cracky = 3 },
-	is_ground_content = true
-})
-
-register_node('nodes:sand', {
-	description = 'Sand',
-	tiles = { 'sand_texture.png' },
-	groups = { crumbly = 3, falling_node = 1 },
-	is_ground_content = true
-})
-
-register_node('nodes:ash', {
-	description = 'Volcanic Ash',
-	tiles = { 'ash_texture.png' },
-	groups = { crumbly = 3, falling_node = 1 },
 	is_ground_content = true
 })
 
@@ -299,6 +140,170 @@ register_node('nodes:sandstone_bricks', {
 	groups = { cracky = 3 },
 	is_ground_content = true
 })
+
+--crumbly/soft dirt like nodes
+
+register_node('nodes:dirt_with_grass', {
+	description = 'Dirt with Grass',
+	tiles = { 'grass_texture.png', 'dirt_texture.png', 'grass_side_texture.png' },
+	groups = { crumbly = 3 },
+	is_ground_content = true
+})
+
+register_node('nodes:rocky_dirt', {
+	description = 'Dirt with Rocks',
+	tiles = { 'rocky_dirt_texture.png' },
+	groups = { crumbly = 3 },
+	is_ground_content = true
+})
+
+register_node('nodes:dirt', {
+	description = 'Dirt',
+	tiles = { 'dirt_texture.png' },
+	groups = { crumbly = 3 },
+	is_ground_content = true
+})
+
+register_node('nodes:volcanic_rocky_dirt', {
+	description = 'Volcanic Dirt with Rocks',
+	tiles = { 'volcanic_rocky_dirt_texture.png' },
+	groups = { crumbly = 3 },
+	is_ground_content = true
+})
+
+register_node('nodes:volcanic_dirt', {
+	description = 'Volcanic Dirt',
+	tiles = { 'volcanic_dirt_texture.png' },
+	groups = { crumbly = 3 },
+	is_ground_content = true
+})
+
+register_node('nodes:sand', {
+	description = 'Sand',
+	tiles = { 'sand_texture.png' },
+	groups = { crumbly = 3, falling_node = 1 },
+	is_ground_content = true
+})
+
+register_node('nodes:ash', {
+	description = 'Volcanic Ash',
+	tiles = { 'ash_texture.png' },
+	groups = { crumbly = 3, falling_node = 1 },
+	is_ground_content = true
+})
+
+--snappy/leafy nodes
+
+register_node('nodes:leaves', {
+	description = 'Leaves',
+	tiles = { 'leaves_texture.png' },
+	groups = { snappy = 3 },
+	is_ground_content = true
+})
+
+register_node('nodes:volcanic_leaves', {
+	description = 'Volcanic Leaves',
+	tiles = { 'volcanic_leaves_texture.png' },
+	groups = { snappy = 3 },
+	is_ground_content = true
+})
+
+register_node('nodes:bush', {
+	description = 'Bush',
+	drawtype = "allfaces_optional",
+	paramtype = "light",
+	tiles = { 'leaves_texture.png' },
+	groups = { snappy = 3 },
+	is_ground_content = true,
+	walkable = false
+})
+
+register_node('nodes:volcanic_leaves_with_chili_tomato', {
+	description = 'Volcanic Leaves with Chili Tomato',
+	drop = 'items:chili_tomato',
+	tiles = { 'volcanic_leaves_with_chili_tomato_texture.png' },
+	groups = { snappy = 3 },
+	is_ground_content = true
+})
+
+register_node('nodes:leaves_with_tomato', {
+	description = 'Leaves with Tomato',
+	drop = 'items:tomato',
+	tiles = { 'leaves_with_tomato_texture.png' },
+	groups = { snappy = 3 },
+	is_ground_content = true
+})
+
+--choppy/wooden nodes
+
+register_node('nodes:tree', {
+	description = 'Tree',
+	tiles = { 'tree_texture.png' },
+	groups = { choppy = 2 },
+	is_ground_content = true
+})
+
+register_node('nodes:volcanic_tree', {
+	description = 'Volcanic Tree',
+	tiles = { 'volcanic_tree_texture.png' },
+	groups = { choppy = 2 },
+	is_ground_content = true
+})
+
+register_node('nodes:planks', {
+	description = 'Planks',
+	tiles = { 'planks_texture.png' },
+	groups = { choppy = 2 },
+	is_ground_content = true
+})
+
+register_node('nodes:volcanic_planks', {
+	description = 'Volcanic Planks',
+	tiles = { 'volcanic_planks_texture.png' },
+	groups = { choppy = 2 },
+	is_ground_content = true
+})
+
+--other (oddly breakable/dig immideate)
+
+register_node('nodes:glass', {
+	description = 'Glass',
+	drawtype = "glasslike",
+	paramtype = "light",
+	tiles = { 'glass_texture.png' },
+	groups = { oddly_breakable_by_hand = 3 },
+	is_ground_content = true
+})
+
+minetest.register_node('nodes:torch', {
+	description = 'Torch',
+	drawtype = 'plantlike',
+	waving = 1,
+	tiles = { 'torch_texture.png' },
+	inventory_image = 'torch_texture.png',
+	wield_image = 'torch_texture.png',
+	sunlight_propagates = true,
+	walkable = false,
+	groups = { dig_immideate = 3 },
+	buildable_to = true,
+	light_source = 10,
+})
+
+minetest.register_node('nodes:rope', {
+	description = 'Rope',
+	drawtype = 'plantlike',
+	tiles = { 'rope_texture.png' },
+	inventory_image = 'rope_texture.png',
+	wield_image = 'rope_texture.png',
+	sunlight_propagates = true,
+	walkable = false,
+	climbable = true,
+	groups = { dig_immideate = 3 },
+})
+
+--liquids
+
+--water
 
 minetest.register_node("nodes:water_source", {
 	description = "Water Source",
