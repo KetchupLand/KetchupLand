@@ -239,28 +239,28 @@ register_node('nodes:leaves_with_tomato', {
 register_node('nodes:tree', {
 	description = 'Tree',
 	tiles = { 'tree_texture.png' },
-	groups = { choppy = 2 },
+	groups = { choppy = 3 },
 	is_ground_content = true
 })
 
 register_node('nodes:volcanic_tree', {
 	description = 'Volcanic Tree',
 	tiles = { 'volcanic_tree_texture.png' },
-	groups = { choppy = 2 },
+	groups = { choppy = 3 },
 	is_ground_content = true
 })
 
 register_node('nodes:planks', {
 	description = 'Planks',
 	tiles = { 'planks_texture.png' },
-	groups = { choppy = 2 },
+	groups = { choppy = 3 },
 	is_ground_content = true
 })
 
 register_node('nodes:volcanic_planks', {
 	description = 'Volcanic Planks',
 	tiles = { 'volcanic_planks_texture.png' },
-	groups = { choppy = 2 },
+	groups = { choppy = 3 },
 	is_ground_content = true
 })
 
