@@ -345,3 +345,18 @@ minetest.register_decoration({
 	flags = "place_center_x, place_center_z, force_placement",
 	rotation = "random",
 })
+
+minetest.register_decoration({
+	deco_type = "schematic",
+	place_on = "nodes:obsidian",
+	sidelen = 16,
+	fill_ratio = 0.0001,
+	biomes = {"volcano"},
+	height = 0,
+	y_min = 0,
+	y_max = 1000,
+	place_offset_y = math.random(-1,-25),
+	schematic = "volcano.mts",
+	flags = "place_center_x, place_center_z, force_placement",
+	rotation = "random",
+})

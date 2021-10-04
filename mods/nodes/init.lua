@@ -284,7 +284,7 @@ minetest.register_node('nodes:torch', {
 	wield_image = 'torch_texture.png',
 	sunlight_propagates = true,
 	walkable = false,
-	groups = { dig_immideate = 3 },
+	groups = { dig_immidiate = 3 },
 	buildable_to = true,
 	light_source = 10,
 })
