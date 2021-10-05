@@ -171,16 +171,16 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "items:mese_pickaxe",
+	output = "items:ketchup_pickaxe",
 	recipe = {
 		{"items:ketchup_bottle", "items:ketchup_bottle", "items:ketchup_bottle"},
-		{"", "items:ketchup_bottle", ""},
-		{"", "items:ketchup_bottle", ""},
+		{"", "items:stick", ""},
+		{"", "items:stick", ""},
 	}
 })
 
 minetest.register_craft({
-	output = "items:iron_pickaxe",
+	output = "items:iron_axe",
 	recipe = {
 		{"items:iron", "items:iron", ""},
 		{"items:iron", "items:stick", ""},
@@ -189,7 +189,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "items:cobalt_pickaxe",
+	output = "items:cobalt_axe",
 	recipe = {
 		{"items:cobalt", "items:cobalt", ""},
 		{"items:cobalt", "items:stick", ""},
@@ -198,7 +198,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "items:ruby_pickaxe",
+	output = "items:ruby_axe",
 	recipe = {
 		{"items:ruby", "items:ruby", ""},
 		{"items:ruby", "items:stick", ""},
@@ -207,7 +207,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "items:jade_pickaxe",
+	output = "items:jade_axe",
 	recipe = {
 		{"items:jade", "items:jade", ""},
 		{"items:jade", "items:stick", ""},
@@ -216,7 +216,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "items:mese_pickaxe",
+	output = "items:mese_axe",
 	recipe = {
 		{"items:mese", "items:mese", ""},
 		{"items:mese", "items:stick", ""},
@@ -225,7 +225,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "items:stone_pickaxe",
+	output = "items:stone_axe",
 	recipe = {
 		{"items:rock", "items:rock", ""},
 		{"items:rock", "items:stick", ""},
@@ -234,11 +234,11 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "items:mese_pickaxe",
+	output = "items:ketchup_axe",
 	recipe = {
 		{"items:ketchup_bottle", "items:ketchup_bottle", ""},
-		{"items:ketchup_bottle", "items:ketchup_bottle", ""},
-		{"", "items:ketchup_bottle", ""},
+		{"items:ketchup_bottle", "items:stick", ""},
+		{"", "items:stick", ""},
 	}
 })
 
