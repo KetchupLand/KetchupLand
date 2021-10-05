@@ -430,3 +430,187 @@ minetest.register_craftitem("items:ketchup_pickaxe", {
 		damage_groups = {fleshy = 1},
 	}
 })
+
+--axes
+
+minetest.register_craftitem("items:iron_axe", {
+	description = "Iron axe",
+	inventory_image = "iron_axe_texture.png",
+	tool_capabilities = {
+		full_punch_interval = 0.5,
+		max_drop_level = 0,
+		groupcaps = {
+			crumbly = {
+				times = {[2] = 3.00, [3] = 0.70},
+				uses = 0,
+				maxlevel = 1,
+			},
+			snappy = {
+				times = {[3] = 0.40},
+				uses = 0,
+				maxlevel = 1,
+			},
+			choppy = {
+				times = {[1] = 2.0, [2] = 2.0, [3] = 2.0},
+				uses = 0,
+			},
+		},
+		damage_groups = {fleshy = 1},
+	}
+})
+
+minetest.register_craftitem("items:cobalt_axe", {
+	description = "Cobalt axe",
+	inventory_image = "cobalt_axe_texture.png",
+	tool_capabilities = {
+		full_punch_interval = 0.5,
+		max_drop_level = 0,
+		groupcaps = {
+			crumbly = {
+				times = {[2] = 3.00, [3] = 0.70},
+				uses = 0,
+				maxlevel = 1,
+			},
+			snappy = {
+				times = {[3] = 0.40},
+				uses = 0,
+				maxlevel = 1,
+			},
+			choppy = {
+				times = {[1] = 1.50, [2] = 1.50, [3] = 1.50},
+				uses = 0,
+			},
+		},
+		damage_groups = {fleshy = 1},
+	}
+})
+
+minetest.register_craftitem("items:jade_axe", {
+	description = "Jade axe",
+	inventory_image = "jade_axe_texture.png",
+	tool_capabilities = {
+		full_punch_interval = 0.5,
+		max_drop_level = 0,
+		groupcaps = {
+			crumbly = {
+				times = {[2] = 3.00, [3] = 0.70},
+				uses = 0,
+				maxlevel = 1,
+			},
+			snappy = {
+				times = {[3] = 0.40},
+				uses = 0,
+				maxlevel = 1,
+			},
+			choppy = {
+				times = {[1] = 1.0, [2] = 1.0, [3] = 1.0},
+				uses = 0,
+			},
+		},
+		damage_groups = {fleshy = 1},
+	}
+})
+
+minetest.register_craftitem("items:stone_axe", {
+	description = "Stone axe",
+	inventory_image = "stone_axe_texture.png",
+	tool_capabilities = {
+		full_punch_interval = 0.5,
+		max_drop_level = 0,
+		groupcaps = {
+			crumbly = {
+				times = {[2] = 3.00, [3] = 0.70},
+				uses = 0,
+				maxlevel = 1,
+			},
+			snappy = {
+				times = {[3] = 0.40},
+				uses = 0,
+				maxlevel = 1,
+			},
+			choppy = {
+				times = {[1] = 2.50, [2] = 2.50, [3] = 2.50},
+				uses = 0,
+			},
+		},
+		damage_groups = {fleshy = 1},
+	}
+})
+
+minetest.register_craftitem("items:ruby_axe", {
+	description = "Ruby axe",
+	inventory_image = "ruby_axe_texture.png",
+	tool_capabilities = {
+		full_punch_interval = 0.5,
+		max_drop_level = 0,
+		groupcaps = {
+			crumbly = {
+				times = {[2] = 0.50, [3] = 0.50},
+				uses = 0,
+				maxlevel = 1,
+			},
+			snappy = {
+				times = {[3] = 0.40},
+				uses = 0,
+				maxlevel = 1,
+			},
+			choppy = {
+				times = {[1] = 0.50, [2] = 0.50, [3] = 0.50},
+				uses = 0,
+			},
+		},
+		damage_groups = {fleshy = 1},
+	}
+})
+
+minetest.register_craftitem("items:mese_axe", {
+	description = "Mese axe",
+	inventory_image = "mese_axe_texture.png",
+	tool_capabilities = {
+		full_punch_interval = 0.5,
+		max_drop_level = 0,
+		groupcaps = {
+			crumbly = {
+				times = {[2] = 0.50, [3] = 0.50},
+				uses = 0,
+				maxlevel = 1,
+			},
+			snappy = {
+				times = {[3] = 0.40},
+				uses = 0,
+				maxlevel = 1,
+			},
+			choppy = {
+				times = {[1] = 0.75, [2] = 0.75, [3] = 0.75},
+				uses = 0,
+			},
+		},
+		damage_groups = {fleshy = 1},
+	}
+})
+
+minetest.register_craftitem("items:ketchup_axe", {
+	description = "Ketchup axe",
+	inventory_image = "ketchup_axe_texture.png",
+	tool_capabilities = {
+		full_punch_interval = 0.5,
+		max_drop_level = 0,
+		groupcaps = {
+			crumbly = {
+				times = {[2] = 3.00, [3] = 0.70},
+				uses = 0,
+				maxlevel = 1,
+			},
+			snappy = {
+				times = {[3] = 0.40},
+				uses = 0,
+				maxlevel = 1,
+			},
+			choppy = {
+				times = {[1] = 2.50, [2] = 2.50, [3] = 2.50},
+				uses = 0,
+			},
+		},
+		damage_groups = {fleshy = 1},
+	}
+})

@@ -20,7 +20,7 @@ register_node('nodes:lapis', {
 register_node('nodes:obsidian', {
 	description = 'Obsidian',
 	tiles = { 'obsidian_texture.png' },
-	groups = { cracky = 3 },
+	groups = { cracky = 1 },
 	is_ground_content = true
 })
 
