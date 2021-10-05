@@ -180,6 +180,69 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
+	output = "items:iron_pickaxe",
+	recipe = {
+		{"items:iron", "items:iron", ""},
+		{"items:iron", "items:stick", ""},
+		{"", "items:stick", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "items:cobalt_pickaxe",
+	recipe = {
+		{"items:cobalt", "items:cobalt", ""},
+		{"items:cobalt", "items:stick", ""},
+		{"", "items:stick", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "items:ruby_pickaxe",
+	recipe = {
+		{"items:ruby", "items:ruby", ""},
+		{"items:ruby", "items:stick", ""},
+		{"", "items:stick", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "items:jade_pickaxe",
+	recipe = {
+		{"items:jade", "items:jade", ""},
+		{"items:jade", "items:stick", ""},
+		{"", "items:stick", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "items:mese_pickaxe",
+	recipe = {
+		{"items:mese", "items:mese", ""},
+		{"items:mese", "items:stick", ""},
+		{"", "items:stick", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "items:stone_pickaxe",
+	recipe = {
+		{"items:rock", "items:rock", ""},
+		{"items:rock", "items:stick", ""},
+		{"", "items:stick", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "items:mese_pickaxe",
+	recipe = {
+		{"items:ketchup_bottle", "items:ketchup_bottle", ""},
+		{"items:ketchup_bottle", "items:ketchup_bottle", ""},
+		{"", "items:ketchup_bottle", ""},
+	}
+})
+
+minetest.register_craft({
 	output = "items:stick",
 	recipe = {
 		{"nodes:leaves",},
