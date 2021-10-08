@@ -234,6 +234,24 @@ register_node('kl_nodes:leaves_with_tomato', {
 	is_ground_content = true
 })
 
+register_node('kl_nodes:cactus', {
+	description = 'Cactus',
+	tiles = { 'kl_nodes_cactus.png' },
+	groups = { snappy = 3 },
+	is_ground_content = true
+})
+
+register_node('kl_nodes:cactus_with_tomato', {
+	description = 'Cactus With Tomato',
+	drop = 'kl_items:tomato',
+	tiles = {
+		'kl_nodes_cactus.png',
+		'kl_nodes_cactus.png^kl_items_tomato.png'
+	},
+	groups = { snappy = 3 },
+	is_ground_content = true
+})
+
 --choppy/wooden nodes
 
 register_node('kl_nodes:tree', {

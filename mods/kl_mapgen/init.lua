@@ -14,8 +14,8 @@ minetest.register_biome({
 	depth_riverbed = 2,
 	y_max = 31000,
 	y_min = 5,
-	heat_point = 50,
-	humidity_point = 12,
+	heat_point = 30,
+	humidity_point = 70,
 })
 
 minetest.register_biome({
@@ -28,8 +28,8 @@ minetest.register_biome({
 	depth_riverbed = 2,
 	y_max = 31000,
 	y_min = 5,
-	heat_point = 48,
-	humidity_point = 9,
+	heat_point = 20,
+	humidity_point = 20,
 })
 
 minetest.register_biome({
@@ -52,8 +52,8 @@ minetest.register_biome({
 	node_river_water = "kl_nodes:lava_source",
 	y_max = 4,
 	y_min = -10,
-	heat_point = 78,
-	humidity_point = 6,
+	heat_point = 94,
+	humidity_point = 38,
 })
 
 minetest.register_biome({
@@ -66,8 +66,20 @@ minetest.register_biome({
 	node_river_water = "kl_nodes:lava_source",
 	y_max = 31000,
 	y_min = 5,
-	heat_point = 78,
-	humidity_point = 6,
+	heat_point = 94,
+	humidity_point = 38,
+})
+
+minetest.register_biome({
+	name = "desert",
+	node_top = "kl_nodes:sand",
+	depth_top = 3,
+	node_filler = "kl_nodes:sandstone",
+	depth_filler = 2,
+	y_max = 31000,
+	y_min = 5,
+	heat_point = 69,
+	humidity_point = 12,
 })
 
 --ores
@@ -363,4 +375,16 @@ minetest.register_decoration({
 	schematic = mts("volcano"),
 	flags = "place_center_x, place_center_z, force_placement",
 	rotation = "random",
+})
+
+minetest.register_decoration({
+	deco_type = "schematic",
+	place_on = "kl_nodes:sand",
+	sidelen = 16,
+	fill_ratio = 0.0014,
+	biomes = {"desert"},
+	y_min = 0,
+	y_max = 1000,
+	place_offset_y = 1,
+	schematic = mts("cactus"),
 })
