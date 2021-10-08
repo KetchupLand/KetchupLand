@@ -388,3 +388,16 @@ minetest.register_decoration({
 	place_offset_y = 1,
 	schematic = mts("cactus"),
 })
+
+minetest.register_decoration({
+	deco_type = "schematic",
+	place_on = "kl_nodes:sand",
+	sidelen = 16,
+	fill_ratio = 0.00001,
+	biomes = {"desert"},
+	y_min = 0,
+	y_max = 1000,
+	place_offset_y = -3,
+	schematic = mts("desert_well"),
+	flags = "force_placement"
+})
