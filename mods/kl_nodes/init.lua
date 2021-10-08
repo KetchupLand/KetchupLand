@@ -51,6 +51,21 @@ register_node('kl_nodes:sandstone', {
 	is_ground_content = true
 })
 
+register_node('kl_nodes:sandstone_slab', {
+	description = 'Sandstone Slab',
+	tiles = { 'kl_nodes_sandstone.png' },
+	drawtype = "nodebox",
+	paramtype = "light",
+	node_box = {
+		type = "fixed",
+		fixed = {
+			{-0.5, -0.5, -0.5, 0.5, 0, 0.5}, -- NodeBox1
+		}
+	},
+	groups = { cracky = 3 },
+	is_ground_content = true
+})
+
 register_node('kl_nodes:cobalt_ore', {
 	description = 'Cobalt Ore',
 	drop = 'kl_items:cobalt',
