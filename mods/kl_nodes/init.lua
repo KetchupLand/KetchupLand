@@ -222,7 +222,7 @@ minetest.register_node('kl_nodes:bush', {
 minetest.register_node('kl_nodes:volcanic_leaves_with_chili_tomato', {
 	description = 'Volcanic Leaves with Chili Tomato',
 	drop = 'kl_items:chili_tomato',
-	tiles = { 'kl_nodes_volcanic_leaves_with_chili_tomato.png' },
+	tiles = { 'kl_nodes_volcanic_leaves.png^kl_items_chili_tomato.png' },
 	groups = { snappy = 3 },
 	is_ground_content = true
 })
@@ -230,7 +230,7 @@ minetest.register_node('kl_nodes:volcanic_leaves_with_chili_tomato', {
 minetest.register_node('kl_nodes:leaves_with_tomato', {
 	description = 'Leaves with Tomato',
 	drop = 'kl_items:tomato',
-	tiles = { 'kl_nodes_leaves_with_tomato.png' },
+	tiles = { 'kl_nodes_leaves.png^kl_items_tomato.png' },
 	groups = { snappy = 3 },
 	is_ground_content = true
 })
