@@ -40,7 +40,7 @@ minetest.register_node('kl_nodes:stone_spike', {
 minetest.register_node('kl_nodes:ruby_ore', {
 	description = 'Ruby Ore',
 	drop = 'kl_items:ruby',
-	tiles = { 'kl_nodes_ruby_ore.png' },
+	tiles = { 'kl_nodes_stone.png^kl_items_ruby.png' },
 	groups = { cracky = 3 },
 	is_ground_content = true
 })
@@ -55,15 +55,7 @@ minetest.register_node('kl_nodes:sandstone', {
 minetest.register_node('kl_nodes:cobalt_ore', {
 	description = 'Cobalt Ore',
 	drop = 'kl_items:cobalt',
-	tiles = { 'kl_nodes_cobalt_ore.png' },
-	groups = { cracky = 3 },
-	is_ground_content = true
-})
-
-minetest.register_node('kl_nodes:ruby_ore', {
-	description = 'Ruby Ore',
-	drop = 'kl_items:ruby',
-	tiles = { 'kl_nodes_ruby_ore.png' },
+	tiles = { 'kl_nodes_stone.png^kl_items_cobalt.png' },
 	groups = { cracky = 3 },
 	is_ground_content = true
 })
@@ -71,7 +63,7 @@ minetest.register_node('kl_nodes:ruby_ore', {
 minetest.register_node('kl_nodes:coal_ore', {
 	description = 'Coal Ore',
 	drop = 'kl_items:coal',
-	tiles = { 'kl_nodes_coal_ore.png' },
+	tiles = { 'kl_nodes_stone.png^kl_items_coal.png' },
 	groups = { cracky = 3 },
 	is_ground_content = true
 })
@@ -79,7 +71,7 @@ minetest.register_node('kl_nodes:coal_ore', {
 minetest.register_node('kl_nodes:jade_ore', {
 	description = 'Jade Ore',
 	drop = 'kl_items:jade',
-	tiles = { 'kl_nodes_jade_ore.png' },
+	tiles = { 'kl_nodes_stone.png^kl_items_jade.png' },
 	groups = { cracky = 3 },
 	is_ground_content = true
 })
@@ -101,7 +93,7 @@ minetest.register_node('kl_nodes:jade_node', {
 minetest.register_node('kl_nodes:mese_ore', {
 	description = 'Mese Ore',
 	drop = 'kl_items:mese',
-	tiles = { 'kl_nodes_mese_ore.png' },
+	tiles = { 'kl_nodes_stone.png^kl_items_mese.png' },
 	groups = { cracky = 3 },
 	is_ground_content = true
 })
@@ -123,7 +115,7 @@ minetest.register_node('kl_nodes:ruby_node', {
 minetest.register_node('kl_nodes:iron_ore', {
 	description = 'Iron Ore',
 	drop = 'kl_items:iron',
-	tiles = { 'kl_nodes_iron_ore.png' },
+	tiles = { 'kl_nodes_stone.png^kl_items_iron.png' },
 	groups = { cracky = 3 },
 	is_ground_content = true
 })
