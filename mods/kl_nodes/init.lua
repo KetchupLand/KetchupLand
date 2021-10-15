@@ -153,7 +153,7 @@ minetest.register_node('kl_nodes:dirt_with_grass', {
 
 minetest.register_node('kl_nodes:rocky_dirt', {
 	description = 'Dirt with Rocks',
-	tiles = { 'kl_nodes_rocky_dirt.png' },
+	tiles = { 'kl_nodes_dirt.png^kl_nodes_rocks.png' },
 	groups = { crumbly = 3 },
 	is_ground_content = true
 })
@@ -167,7 +167,7 @@ minetest.register_node('kl_nodes:dirt', {
 
 minetest.register_node('kl_nodes:volcanic_rocky_dirt', {
 	description = 'Volcanic Dirt with Rocks',
-	tiles = { 'kl_nodes_volcanic_rocky_dirt.png' },
+	tiles = { 'kl_nodes_volcanic_dirt.png^kl_nodes_rocks.png' },
 	groups = { crumbly = 3 },
 	is_ground_content = true
 })
