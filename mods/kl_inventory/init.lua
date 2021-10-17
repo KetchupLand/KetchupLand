@@ -37,7 +37,6 @@ minetest.register_on_joinplayer(function(player)
 		
 		label[0.25,0.30;Inventory]
 		label[0.26,0.30;Inventory]
-		label[0.27,0.30;Inventory]
 		style_type[label;textcolor=#353535]
 		label[0.5,4.25;Your inventory]
 		label[4,0.75;Crafting]
