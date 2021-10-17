@@ -30,6 +30,7 @@ minetest.register_node("kl_nodes:chest", {
 		button_exit[9.5,0.10;0.4,0.4;close;x]
 		
 		label[0.25,0.30;Chest]
+		label[0.26,0.30;Chest]
 		style_type[label;textcolor=#353535]
 		label[0.5,4.25;Your inventory]
 		label[0.5,0.75;Chest]
