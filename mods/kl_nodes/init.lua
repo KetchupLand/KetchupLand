@@ -77,6 +77,20 @@ minetest.register_node('kl_nodes:jade_ore', {
 	is_ground_content = true
 })
 
+minetest.register_node('kl_nodes:coal_node', {
+	description = 'Coal Node',
+	tiles = { 'kl_nodes_coal_node.png' },
+	groups = { cracky = 3 },
+	is_ground_content = true
+})
+
+minetest.register_node('kl_nodes:iron_node', {
+	description = 'Iron Node',
+	tiles = { 'kl_nodes_iron_node.png' },
+	groups = { cracky = 3 },
+	is_ground_content = true
+})
+
 minetest.register_node('kl_nodes:cobalt_node', {
 	description = 'Cobalt Node',
 	tiles = { 'kl_nodes_cobalt_node.png' },
