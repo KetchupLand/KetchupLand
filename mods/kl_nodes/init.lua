@@ -153,6 +153,7 @@ minetest.register_node('kl_nodes:sandstone_bricks', {
 
 minetest.register_node('kl_nodes:dirt_with_grass', {
 	description = 'Dirt with Grass',
+	drop = "kl_nodes:dirt",
 	tiles = { 'kl_nodes_grass.png', 'kl_nodes_dirt.png', 'kl_nodes_grass_side.png' },
 	groups = { crumbly = 3 },
 	is_ground_content = true
@@ -161,7 +162,7 @@ minetest.register_node('kl_nodes:dirt_with_grass', {
 minetest.register_node('kl_nodes:rocky_dirt', {
 	description = 'Dirt with Rocks',
 	tiles = { 'kl_nodes_dirt.png^kl_nodes_rocks.png' },
-	groups = { crumbly = 3 },
+	groups = { crumbly = 3,rocky = 1 },
 	is_ground_content = true
 })
 
@@ -172,10 +173,11 @@ minetest.register_node('kl_nodes:dirt', {
 	is_ground_content = true
 })
 
-minetest.register_node('kl_nodes:volcanic_rocky_dirt', {
+minetest.register_node('kl_nodes:rocky_volcanic_dirt', {
 	description = 'Volcanic Dirt with Rocks',
+	drop = "kl_items:rock",
 	tiles = { 'kl_nodes_volcanic_dirt.png^kl_nodes_rocks.png' },
-	groups = { crumbly = 3 },
+	groups = { crumbly = 3, rocky = 1 },
 	is_ground_content = true
 })
 
@@ -205,14 +207,14 @@ minetest.register_node('kl_nodes:ash', {
 minetest.register_node('kl_nodes:leaves', {
 	description = 'Leaves',
 	tiles = { 'kl_nodes_leaves.png' },
-	groups = { snappy = 3 },
+	groups = { snappy = 3, leaves = 1 },
 	is_ground_content = true
 })
 
 minetest.register_node('kl_nodes:volcanic_leaves', {
 	description = 'Volcanic Leaves',
 	tiles = { 'kl_nodes_volcanic_leaves.png' },
-	groups = { snappy = 3 },
+	groups = { snappy = 3,leaves = 1 },
 	is_ground_content = true
 })
 
@@ -221,7 +223,7 @@ minetest.register_node('kl_nodes:bush', {
 	drawtype = "allfaces_optional",
 	paramtype = "light",
 	tiles = { 'kl_nodes_leaves.png' },
-	groups = { snappy = 3 },
+	groups = { snappy = 3, leaves = 1 },
 	is_ground_content = true,
 	walkable = false
 })
@@ -230,7 +232,7 @@ minetest.register_node('kl_nodes:volcanic_leaves_with_chili_tomato', {
 	description = 'Volcanic Leaves with Chili Tomato',
 	drop = 'kl_items:chili_tomato',
 	tiles = { 'kl_nodes_volcanic_leaves.png^kl_items_chili_tomato.png' },
-	groups = { snappy = 3 },
+	groups = { snappy = 3, leaves = 1 },
 	is_ground_content = true
 })
 
@@ -238,7 +240,7 @@ minetest.register_node('kl_nodes:leaves_with_tomato', {
 	description = 'Leaves with Tomato',
 	drop = 'kl_items:tomato',
 	tiles = { 'kl_nodes_leaves.png^kl_items_tomato.png' },
-	groups = { snappy = 3 },
+	groups = { snappy = 3, leaves = 1 },
 	is_ground_content = true
 })
 
@@ -279,14 +281,14 @@ minetest.register_node('kl_nodes:volcanic_tree', {
 minetest.register_node('kl_nodes:planks', {
 	description = 'Planks',
 	tiles = { 'kl_nodes_planks.png' },
-	groups = { choppy = 3 },
+	groups = { choppy = 3, planks = 1 },
 	is_ground_content = true
 })
 
 minetest.register_node('kl_nodes:volcanic_planks', {
 	description = 'Volcanic Planks',
 	tiles = { 'kl_nodes_volcanic_planks.png' },
-	groups = { choppy = 3 },
+	groups = { choppy = 3, planks = 1 },
 	is_ground_content = true
 })
 
