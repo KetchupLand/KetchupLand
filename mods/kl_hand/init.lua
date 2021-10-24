@@ -1,6 +1,7 @@
 local register_item = minetest.register_item
 
 if minetest.settings:get_bool("creative_mode") then
+	local digtime = 42
 	local caps = {times = {42, 42, 42}, uses = 0, maxlevel = 256}
 	register_item(':', {
 		type = 'none',

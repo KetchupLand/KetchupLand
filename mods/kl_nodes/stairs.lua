@@ -1,4 +1,4 @@
-function register_stair_and_slab(subname, recipeitem, groups, tiles, description)
+function register_stair_and_slab(subname, recipeitem, groups, tiles, description, texture_alpha)
 	minetest.register_node("kl_nodes:"..subname.."_stair", {
 		description = description.." Stairs",
 		drawtype = "nodebox",
@@ -13,6 +13,7 @@ function register_stair_and_slab(subname, recipeitem, groups, tiles, description
 				{-0.5, 0.0, 0.0, 0.5, 0.5, 0.5},
 			},
 		},
+		use_texture_alpha = texture_alpha
 	})
 	if recipeitem then
 		minetest.register_craft({
@@ -36,6 +37,7 @@ function register_stair_and_slab(subname, recipeitem, groups, tiles, description
 				{-0.5, -0.5, -0.5, 0.5, 0.0, 0.5},
 			},
 		},
+		use_texture_alpha = texture_alpha
 	})
 
 	if recipeitem then
@@ -109,5 +111,6 @@ register_stair_and_slab(
 	'kl_nodes:glass',
 	{ oddly_breakable_by_hand = 3 },
 	{'kl_nodes_glass.png'},
-	'Glass'
+	'Glass',
+	"clip"
 )

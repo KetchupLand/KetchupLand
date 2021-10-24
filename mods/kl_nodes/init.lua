@@ -300,6 +300,7 @@ minetest.register_node('kl_nodes:glass', {
 	paramtype = "light",
 	tiles = { 'kl_nodes_glass.png' },
 	groups = { oddly_breakable_by_hand = 3 },
+	use_texture_alpha = "clip",
 	is_ground_content = true
 })
 
