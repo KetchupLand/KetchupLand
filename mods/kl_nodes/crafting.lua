@@ -98,12 +98,14 @@ minetest.register_craft({
 
 --tables
 
-materials = {"coal", "iron", "cobalt", "jade", "ruby", "mese"}
-stones = {"stone", "sandstone"}
-dirts = {"dirt","volcanic_dirt",}
-ores = {"iron", "cobalt", "jade", "ruby", "mese"}
+local materials = {"coal", "iron", "cobalt", "jade", "ruby", "mese"}
+local stones = {"stone", "sandstone"}
+local dirts = {"dirt","volcanic_dirt",}
+local ores = {"iron", "cobalt", "jade", "ruby", "mese"}
 
-leaves = {
+local tool_materials = {stone = "rock", "iron", "cobalt", "jade", "ruby", "mese"}
+
+local leaves = {
 	{
 		tomato = "tomato",
 		leaves = "leaves"
@@ -115,7 +117,7 @@ leaves = {
 		leaves = "cactus"
 	}
 }
-trees = {
+local trees = {
 	{
 		tree = "tree",
 		plank = "planks"
@@ -124,7 +126,7 @@ trees = {
 		plank = "volcanic_planks"
 	},
 }
-ketchup = {
+local ketchup = {
 	{
 		tomato = "tomato",
 		ketchup = "ketchup"
@@ -143,7 +145,7 @@ for _,material in pairs(materials) do
     local n = "kl_nodes:"..material.."_node"
     local s = "kl_nodes:stone"
     local o = "kl_nodes:"..material.."_ore"
-    
+
 	minetest.register_craft({
 		output = n,
 		recipe = {
@@ -172,10 +174,10 @@ end
 
 --brick crafting
 
-for _,stones in pairs(stones) do
-	local s = "kl_nodes:"..stones
-	local c = "kl_nodes:"..stones.."_bricks"
-	
+for _,stone in pairs(stones) do
+	local s = "kl_nodes:"..stone
+	local c = "kl_nodes:"..stone.."_bricks"
+
 	minetest.register_craft({
 		output = c,
 		recipe = {
@@ -188,11 +190,11 @@ end
 
 --rocky dirt crafting
 
-for _,dirts in pairs(dirts) do
-	local d = "kl_nodes:"..dirts
-	local c = "kl_nodes:rocky_"..dirts
+for _,dirt in pairs(dirts) do
+	local d = "kl_nodes:"..dirt
+	local c = "kl_nodes:rocky_"..dirt
 	local r = "kl_items:rock"
-	
+
 	minetest.register_craft({
 		output = c,
 		recipe = {
@@ -209,7 +211,7 @@ for _, thing in pairs(leaves) do
 	local l = "kl_nodes:"..thing.leaves
 	local c = "kl_nodes:"..thing.leaves.."_with_"..thing.tomato
 	local t = "kl_items:"..thing.tomato
-	
+
 	minetest.register_craft({
 		output = c,
 		recipe = {
@@ -222,10 +224,10 @@ end
 
 --planks crafting
 
-for _,trees in pairs(trees) do
-	local t = "kl_nodes:"..trees.tree
-	local p = "kl_nodes:"..trees.plank
-	
+for _,tree in pairs(trees) do
+	local t = "kl_nodes:"..tree.tree
+	local p = "kl_nodes:"..tree.plank
+
 	minetest.register_craft({
 	output = p.." 4",
 	recipe = {
@@ -240,7 +242,7 @@ for _,ketchup in pairs(ketchup) do
 	local t = "kl_items:"..ketchup.tomato
 	local k = "kl_items:"..ketchup.ketchup.."_bottle"
 	local b = "kl_items:bottle"
-	
+
 	minetest.register_craft({
 		output = k,
 		recipe = {
@@ -252,12 +254,18 @@ end
 
 --tools crafting
 
-for _,ores in pairs(ores) do
-	local m = "kl_items:"..ores
+for k,v in pairs(tool_materials) do
+	local m = "kl_items:"..v
 	local s = "kl_items:stick"
-	local p = "kl_items:"..ores.."_pickaxe"
-	local a = "kl_items:"..ores.."_axe"
-	
+	local p,a
+	if k then
+		p = "kl_items:"..k.."_pickaxe"
+		a = "kl_items:"..k.."_axe"
+	else
+		p = "kl_items:"..v.."_pickaxe"
+		a = "kl_items:"..v.."_axe"
+	end
+
 	minetest.register_craft({
 		output = p,
 		recipe = {

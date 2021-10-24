@@ -173,7 +173,7 @@ minetest.register_node('kl_nodes:dirt', {
 	is_ground_content = true
 })
 
-minetest.register_node('kl_nodes:rocky_volcanic_dirt', {
+minetest.register_node('kl_nodes:volcanic_rocky_dirt', {
 	description = 'Volcanic Dirt with Rocks',
 	drop = "kl_items:rock",
 	tiles = { 'kl_nodes_volcanic_dirt.png^kl_nodes_rocks.png' },
