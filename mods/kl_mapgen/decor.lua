@@ -43,7 +43,7 @@ minetest.register_decoration({
 	height = 0,
 	y_min = 0,
 	y_max = 32000,
-	place_offset_y = math.random(-2,-1),
+	place_offset_y = math.random(-1,0),
 	schematic = mts("boulder"),
 	flags = "place_center_x, place_center_z, force_placement",
 	rotation = "random",
