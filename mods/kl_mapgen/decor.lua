@@ -145,7 +145,7 @@ minetest.register_decoration({
 	deco_type = "schematic",
 	place_on = "kl_nodes:sand",
 	sidelen = 16,
-	fill_ratio = 0.00005,
+	fill_ratio = 0.00001,
 	biomes = {"desert"},
 	height = 0,
 	y_min = 0,
