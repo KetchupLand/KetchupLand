@@ -307,6 +307,7 @@ minetest.register_node('kl_nodes:glass', {
 minetest.register_node('kl_nodes:torch', {
 	description = 'Torch',
 	drawtype = 'plantlike',
+	paramtype = 'light',
 	waving = 1,
 	tiles = { 'kl_nodes_torch.png' },
 	inventory_image = 'kl_nodes_torch.png',
@@ -321,13 +322,14 @@ minetest.register_node('kl_nodes:torch', {
 minetest.register_node('kl_nodes:rope', {
 	description = 'Rope',
 	drawtype = 'plantlike',
+	paramtype = 'light',
 	tiles = { 'kl_nodes_rope.png' },
 	inventory_image = 'kl_nodes_rope.png',
 	wield_image = 'kl_nodes_rope.png',
 	sunlight_propagates = true,
 	walkable = false,
 	climbable = true,
-	groups = { dig_immideate = 3 },
+	groups = { oddly_breakable_by_hand = 3 },
 })
 
 minetest.register_alias('mapgen_stone', 'kl_nodes:stone')
