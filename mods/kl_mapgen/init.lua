@@ -401,3 +401,18 @@ minetest.register_decoration({
 	schematic = mts("desert_well"),
 	flags = "force_placement"
 })
+
+minetest.register_decoration({
+	deco_type = "schematic",
+	place_on = "kl_nodes:sand",
+	sidelen = 16,
+	fill_ratio = 0.00005,
+	biomes = {"desert"},
+	height = 0,
+	y_min = 0,
+	y_max = 1000,
+	place_offset_y = -15,
+	schematic = mts("pyramid"),
+	flags = "place_center_x, place_center_z, force_placement",
+	rotation = "random",
+})
