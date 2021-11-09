@@ -1,26 +1,21 @@
-function get_list_bg(x,y,w,h)
-	local out = ""
-	for i=0,w-1,1 do
-		for j=0,h-1,1 do
-			out = out .."image["..x+i..","..y+j..";1,1;kl_list_bg.png]"
-		end
+
+function get_inventory_formspec(playername)
+	local creative_button = ""
+	if minetest.is_creative_enabled(playername) then
+		creative_button = [[
+			button[0.5,8.2;2,0.5;creative;Creative]
+			style[inventory;border=false;bgimg=;bgimg_pressed=]
+			button[2.5,8.2;2,0.5;inventory;Inventory]
+		]]
 	end
-	return out
-end
 
-minetest.register_on_joinplayer(function(player)
-	--player:hud_set_hotbar_image("gui_hotbar.png")
-	--player:hud_set_hotbar_selected_image("gui_hotbar_selected.png")
-	player:get_inventory():set_width("main", 9)
-	player:get_inventory():set_size("main", 36)
-	player:hud_set_hotbar_itemcount(9)
-	local inv_formspec = [[
-
-		size[10,8.5]
+	return formspec_wrapper([[
+		size[10,8.7]
 		real_coordinates[true]
 
+		style_type[button;border=false;bgimg=kl_background.png;bgimg_pressed=kl_btn_bg_pressed.png;bgimg_middle=5,5;textcolor=#000000]
 		style_type[list;spacing=0,0]
-		style[close;border=false;bgimg=kl_background.png;bgimg_pressed=kl_btn_bg_pressed.png;bgimg_middle=5,5;textcolor=#353535]
+		style[close;border=false;bgimg=kl_background.png;bgimg_pressed=kl_btn_bg_pressed_red.png;bgimg_middle=5,5;textcolor=#353535]
 		listcolors[#ffffff00;#ffffff80]
 		background9[0,0;0,0;kl_background.png;true;5]
 
@@ -45,12 +40,31 @@ minetest.register_on_joinplayer(function(player)
 		${list_bg_craftpreview}
 		${list_bg_hotbar}
 		${list_bg_inventory}
-	]]
 
-	player:set_inventory_formspec(inv_formspec
-		:gsub('${list_bg_craft}', get_list_bg(4,1,3,3))
-		:gsub('${list_bg_craftpreview}', get_list_bg(8,2,1,1))
-		:gsub('${list_bg_hotbar}', get_list_bg(0.5,7,9,1))
-		:gsub('${list_bg_inventory}', get_list_bg(0.5,4.5,9,2))
-	)
+		${creative_btn}
+	]], {
+		list_bg_craft = get_list_bg(4,1,3,3),
+		list_bg_craftpreview = get_list_bg(8,2,1,1),
+		list_bg_hotbar = get_list_bg(0.5,7,9,1),
+		list_bg_inventory = get_list_bg(0.5,4.5,9,2),
+		creative_btn = creative_button
+	})
+end
+
+minetest.register_on_joinplayer(function(player)
+	--player:hud_set_hotbar_image("gui_hotbar.png")
+	--player:hud_set_hotbar_selected_image("gui_hotbar_selected.png")
+	player:get_inventory():set_width("main", 9)
+	player:get_inventory():set_size("main", 36)
+	player:hud_set_hotbar_itemcount(9)
+
+	player:set_inventory_formspec(get_inventory_formspec(player:get_player_name()))
 end)
+
+minetest.register_on_player_receive_fields(function(player, formname, fields)
+	if formname == "" and fields.creative and minetest.is_creative_enabled(player) then
+		minetest.show_formspec(player:get_player_name(), "kl_inventory:creative", get_creative_formspec(1))
+	end
+end)
+
+dofile(minetest.get_modpath('kl_inventory')..'/creative.lua')
