@@ -244,6 +244,14 @@ minetest.register_node('kl_nodes:leaves_with_tomato', {
 	is_ground_content = true
 })
 
+minetest.register_node('kl_nodes:birch_leaves_with_tomato', {
+	description = 'Birch Leaves with Tomato',
+	drop = 'kl_items:tomato',
+	tiles = { 'birch_leaves_with_tomato_texture.png' },
+	groups = { snappy = 3, leaves = 1 },
+	is_ground_content = true
+})
+
 minetest.register_node('kl_nodes:cactus', {
 	description = 'Cactus',
 	tiles = { 'kl_nodes_cactus.png' },
