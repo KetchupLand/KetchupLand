@@ -211,6 +211,13 @@ minetest.register_node('kl_nodes:leaves', {
 	is_ground_content = true
 })
 
+minetest.register_node('kl_nodes:birch_leaves', {
+	description = 'Birch Leaves',
+	tiles = { 'birch_leaves_texture.png' },
+	groups = { snappy = 3, leaves = 1 },
+	is_ground_content = true
+})
+
 minetest.register_node('kl_nodes:volcanic_leaves', {
 	description = 'Volcanic Leaves',
 	tiles = { 'kl_nodes_volcanic_leaves.png' },
