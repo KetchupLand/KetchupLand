@@ -271,6 +271,13 @@ minetest.register_node('kl_nodes:tree', {
 	is_ground_content = true
 })
 
+minetest.register_node('kl_nodes:birch_tree', {
+	description = 'Birch Tree',
+	tiles = { 'birch_tree_texture.png' },
+	groups = { choppy = 3 },
+	is_ground_content = true
+})
+
 minetest.register_node('kl_nodes:volcanic_tree', {
 	description = 'Volcanic Tree',
 	tiles = { 'kl_nodes_volcanic_tree.png' },
@@ -281,6 +288,13 @@ minetest.register_node('kl_nodes:volcanic_tree', {
 minetest.register_node('kl_nodes:planks', {
 	description = 'Planks',
 	tiles = { 'kl_nodes_planks.png' },
+	groups = { choppy = 3, planks = 1 },
+	is_ground_content = true
+})
+
+minetest.register_node('kl_nodes:birch_planks', {
+	description = 'Birch Planks',
+	tiles = { 'birch_planks_texture.png' },
 	groups = { choppy = 3, planks = 1 },
 	is_ground_content = true
 })
