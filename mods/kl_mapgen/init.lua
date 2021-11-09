@@ -35,17 +35,35 @@ minetest.register_biome({
 	humidity_point = 20,
 })
 
-minetest.register_biome({
-	name = "beach",
-	node_top = "kl_nodes:sand",
-	depth_top = 2,
-	node_filler = "kl_nodes:sandstone",
-	depth_filler = 3,
-	y_max = 4,
-	y_min = -10,
-	heat_point = 50,
-	humidity_point = 12,
-})
+-- This is the way it is to prevent ash beaches from showing up where they shouldn't. Dumb fucking shit.
+local beach_biomes = {
+	forest = {
+		heat = 30,
+		humidity = 70
+	},
+	plains = {
+		heat = 20,
+		humidity = 20
+	},
+	desert = {
+		heat = 69,
+		humidity = 12
+	}
+}
+
+for k,v in pairs(beach_biomes) do
+	minetest.register_biome({
+		name = "beach_"..k,
+		node_top = "kl_nodes:sand",
+		depth_top = 2,
+		node_filler = "kl_nodes:sandstone",
+		depth_filler = 3,
+		y_max = 4,
+		y_min = -10,
+		heat_point = v.heat,
+		humidity_point = v.humidity,
+	})
+end
 
 minetest.register_biome({
 	name = "ash_beach",
