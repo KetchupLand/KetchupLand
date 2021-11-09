@@ -1,11 +1,11 @@
-local register_item = minetest.register_item
 
 if minetest.settings:get_bool("creative_mode") then
 	local digtime = 42
 	local caps = {times = {42, 42, 42}, uses = 0, maxlevel = 256}
-	register_item(':', {
+	minetest.register_item(':', {
 		type = 'none',
 		wield_image = 'kl_hand.png',
+		range = 9,
 		tool_capabilities = {
 			full_punch_interval = 0.9,
 			max_drop_level = 0,
@@ -22,9 +22,10 @@ if minetest.settings:get_bool("creative_mode") then
 		}
 	})
 else
-	register_item(':', {
+	minetest.register_item(':', {
 		type = 'none',
 		wield_image = 'kl_hand.png',
+		range = 5,
 		tool_capabilities = {
 			full_punch_interval = 0.9,
 			max_drop_level = 0,
