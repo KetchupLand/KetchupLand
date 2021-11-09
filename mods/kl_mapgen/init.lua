@@ -22,6 +22,20 @@ minetest.register_biome({
 })
 
 minetest.register_biome({
+	name = "birch_forest",
+	node_top = "kl_nodes:dirt_with_grass",
+	depth_top = 1,
+	node_filler = "kl_nodes:dirt",
+	depth_filler = 3,
+	node_riverbed = "kl_nodes:stone",
+	depth_riverbed = 2,
+	y_max = 31000,
+	y_min = 5,
+	heat_point = 35,
+	humidity_point = 70,
+})
+
+minetest.register_biome({
 	name = "plains",
 	node_top = "kl_nodes:dirt_with_grass",
 	depth_top = 1,
