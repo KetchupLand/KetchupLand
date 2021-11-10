@@ -1,16 +1,22 @@
 
 function get_inventory_formspec(playername)
 	local creative_button = ""
+	local formspec_height
 	if minetest.is_creative_enabled(playername) then
 		creative_button = [[
-			button[0.5,8.2;2,0.5;creative;Creative]
 			style[inventory;border=false;bgimg=;bgimg_pressed=]
-			button[2.5,8.2;2,0.5;inventory;Inventory]
+			button[0.5,8.25;2,0.6;inventory;Inventory]
+			style[creative;border=false;bgimg=kl_btn_tab.png;bgimg_pressed=kl_btn_tab_pressed.png]
+			button[2.5,8.25;2,0.6;creative;Creative]
 		]]
+
+		formspec_height = 8.8
+	else
+		formspec_height = 8.5
 	end
 
 	return formspec_wrapper([[
-		size[10,8.7]
+		size[10,${formspec_height}]
 		real_coordinates[true]
 
 		style_type[button;border=false;bgimg=kl_background.png;bgimg_pressed=kl_btn_bg_pressed.png;bgimg_middle=5,5;textcolor=#000000]
@@ -43,6 +49,7 @@ function get_inventory_formspec(playername)
 
 		${creative_btn}
 	]], {
+		formspec_height = formspec_height,
 		list_bg_craft = get_list_bg(4,1,3,3),
 		list_bg_craftpreview = get_list_bg(8,2,1,1),
 		list_bg_hotbar = get_list_bg(0.5,7,9,1),

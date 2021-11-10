@@ -31,7 +31,7 @@ local ipp = 36
 function get_creative_formspec(page)
 	local start = 0 + (page-1)*ipp
 	return formspec_wrapper([[
-		size[10,8.7]
+		size[10,8.8]
 		real_coordinates[true]
 
 		style_type[button;border=false;bgimg=kl_background.png;bgimg_pressed=kl_btn_bg_pressed.png;bgimg_middle=5,5;textcolor=#000000]
@@ -67,9 +67,10 @@ function get_creative_formspec(page)
 		${list_bg_creative}
 		${list_bg_trash}
 
+		style[inventory;border=false;bgimg=kl_btn_tab.png;bgimg_pressed=kl_btn_tab_pressed.png]
+		button[0.5,8.25;2,0.6;inventory;Inventory]
 		style[creative;border=false;bgimg=;bgimg_pressed=]
-		button[0.5,8.2;2,0.5;creative;Creative]
-		button[2.5,8.2;2,0.5;inventory;Inventory]
+		button[2.5,8.25;2,0.6;creative;Creative]
 	]], {
 		list_bg_creative = get_list_bg(0.5,1,9,4),
 		list_bg_hotbar = get_list_bg(0.5,7,9,1),
@@ -81,7 +82,7 @@ function get_creative_formspec(page)
 end
 
 minetest.register_on_player_receive_fields(function(player, formname, fields)
-	if formname == "kl_inventory:creative" and fields.quit == nil then
+	if formname == "kl_inventory:creative" and fields.quit == nil and fields.creative == nil then
 		if fields.inventory then
 			minetest.show_formspec(player:get_player_name(), "", get_inventory_formspec())
 			return
