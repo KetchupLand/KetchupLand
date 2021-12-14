@@ -98,12 +98,12 @@ minetest.register_craft({
 
 --tables
 
-local materials = {"coal", "iron", "cobalt", "jade", "ruby", "mese"}
+local materials = {"coal", "iron", "cobalt", "jade", "ruby", "diamond", "mese"}
 local stones = {"stone", "sandstone"}
 local dirts = {"dirt","volcanic_dirt",}
 local ores = {"iron", "cobalt", "jade", "ruby", "mese"}
 
-local tool_materials = {stone = "rock", "iron", "cobalt", "jade", "ruby", "mese"}
+local tool_materials = {stone = "rock", "iron", "cobalt", "diamond", "mese"}
 
 local leaves = {
 	{

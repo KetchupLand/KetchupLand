@@ -1,30 +1,15 @@
 dofile(minetest.get_modpath("kl_items") .. "/tools.lua")
 
+minetest.register_craftitem("kl_items:rock", {
+	description = "Rock",
+	inventory_image = "kl_items_rock.png",
+})
+
 --ores
-
-minetest.register_craftitem("kl_items:ruby", {
-	description = "Ruby",
-	inventory_image = "kl_items_ruby.png",
-})
-
-minetest.register_craftitem("kl_items:jade", {
-	description = "Jade",
-	inventory_image = "kl_items_jade.png",
-})
-
-minetest.register_craftitem("kl_items:cobalt", {
-	description = "Cobalt",
-	inventory_image = "kl_items_cobalt.png",
-})
 
 minetest.register_craftitem("kl_items:coal", {
 	description = "Coal",
 	inventory_image = "kl_items_coal.png",
-})
-
-minetest.register_craftitem("kl_items:mese", {
-	description = "Mese",
-	inventory_image = "kl_items_mese.png",
 })
 
 minetest.register_craftitem("kl_items:iron", {
@@ -32,9 +17,29 @@ minetest.register_craftitem("kl_items:iron", {
 	inventory_image = "kl_items_iron.png",
 })
 
-minetest.register_craftitem("kl_items:rock", {
-	description = "Rock",
-	inventory_image = "kl_items_rock.png",
+minetest.register_craftitem("kl_items:cobalt", {
+	description = "Cobalt",
+	inventory_image = "kl_items_cobalt.png",
+})
+
+minetest.register_craftitem("kl_items:jade", {
+	description = "Jade",
+	inventory_image = "kl_items_jade.png",
+})
+
+minetest.register_craftitem("kl_items:ruby", {
+	description = "Ruby",
+	inventory_image = "kl_items_ruby.png",
+})
+
+minetest.register_craftitem("kl_items:diamond", {
+	description = "Diamond",
+	inventory_image = "kl_items_diamond.png",
+})
+
+minetest.register_craftitem("kl_items:mese", {
+	description = "Mese",
+	inventory_image = "kl_items_mese.png",
 })
 
 --tomatoes
