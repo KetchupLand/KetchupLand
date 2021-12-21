@@ -103,8 +103,6 @@ local stones = {"stone", "sandstone"}
 local dirts = {"dirt","volcanic_dirt",}
 local ores = {"iron", "cobalt", "jade", "ruby", "mese"}
 
-local tool_materials = {stone = "rock", "iron", "cobalt", "diamond", "mese"}
-
 local leaves = {
 	{
 		tomato = "tomato",
@@ -252,34 +250,3 @@ for _,ketchup in pairs(ketchup) do
 	})
 end
 
---tools crafting
-
-for k,v in pairs(tool_materials) do
-	local m = "kl_items:"..v
-	local s = "kl_items:stick"
-	local p,a
-	if k then
-		p = "kl_items:"..k.."_pickaxe"
-		a = "kl_items:"..k.."_axe"
-	else
-		p = "kl_items:"..v.."_pickaxe"
-		a = "kl_items:"..v.."_axe"
-	end
-
-	minetest.register_craft({
-		output = p,
-		recipe = {
-			{m,m,m},
-			{"",s,""},
-			{"",s,""},
-		}
-	})
-	minetest.register_craft({
-		output = a,
-		recipe = {
-			{m,m},
-			{m,s},
-			{"",s},
-		}
-	})
-end

@@ -10,3 +10,7 @@ local include = rawget(_G, "include") or function(...)
 	return dofile(table.concat(parts, "/"))
 end
 rawset(_G, "include", include)
+
+function is_numeric(variable)
+	return tonumber(variable, 10) ~= nil
+end

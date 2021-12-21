@@ -1,4 +1,3 @@
-include('tools')
 
 minetest.register_craftitem("kl_items:rock", {
 	description = "Rock",
