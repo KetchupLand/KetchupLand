@@ -74,4 +74,4 @@ minetest.register_on_player_receive_fields(function(player, formname, fields)
 	end
 end)
 
-dofile(minetest.get_modpath('kl_inventory')..'/creative.lua')
+include('creative')

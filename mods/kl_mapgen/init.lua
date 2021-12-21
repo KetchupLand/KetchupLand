@@ -2,8 +2,8 @@ function mts(name)
 	return minetest.get_modpath("kl_mapgen").."/schematics/"..name..".mts"
 end
 
-dofile(minetest.get_modpath("kl_mapgen") .. "/ores.lua")
-dofile(minetest.get_modpath("kl_mapgen") .. "/decor.lua")
+include('ores')
+include('decor')
 
 --biomes
 

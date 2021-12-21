@@ -1,4 +1,4 @@
-dofile(minetest.get_modpath("kl_items") .. "/tools.lua")
+include('tools')
 
 minetest.register_craftitem("kl_items:rock", {
 	description = "Rock",

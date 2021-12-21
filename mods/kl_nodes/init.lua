@@ -1,7 +1,7 @@
-dofile(minetest.get_modpath("kl_nodes") .. "/liquids.lua")
-dofile(minetest.get_modpath("kl_nodes") .. "/crafting.lua")
-dofile(minetest.get_modpath("kl_nodes") .. "/stairs.lua")
-dofile(minetest.get_modpath("kl_nodes") .. "/chests.lua")
+include('liquids')
+include('crafting')
+include('stairs')
+include('chests')
 
 --cracky/hard stone like nodes
 
