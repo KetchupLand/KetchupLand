@@ -29,3 +29,4 @@ include('crafting')
 
 include('tool_axe')
 include('tool_pickaxe')
+include('tool_shovel')

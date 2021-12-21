@@ -1,14 +1,13 @@
--- Pickaxes
 
-minetest.register_craftitem(":kl_items:stone_pickaxe", {
-	description = "Stone Pickaxe",
-	inventory_image = "kl_tools_stone_pickaxe.png",
+minetest.register_craftitem(":kl_items:stone_shovel", {
+	description = "Stone Shovel",
+	inventory_image = "kl_tools_stick.png^kl_tools_stone_shovel.png",
 	tool_capabilities = {
 		full_punch_interval = 0.5,
 		max_drop_level = 0,
 		groupcaps = {
 			crumbly = {
-				times = {[2] = 3.00, [3] = 0.90},
+				times = {[2] = 3.00, [3] = 0.80},
 				uses = 0,
 				maxlevel = 1,
 			},
@@ -16,25 +15,21 @@ minetest.register_craftitem(":kl_items:stone_pickaxe", {
 				times = {[3] = 0.40},
 				uses = 0,
 				maxlevel = 1,
-			},
-			cracky = {
-				times = {[1] = 2.50, [2] = 2.50, [3] = 2.50},
-				uses = 0,
 			},
 		},
 		damage_groups = {fleshy = 1},
 	}
 })
 
-minetest.register_craftitem(":kl_items:iron_pickaxe", {
-	description = "Iron Pickaxe",
-	inventory_image = "kl_tools_iron_pickaxe.png",
+minetest.register_craftitem(":kl_items:iron_shovel", {
+	description = "Iron Shovel",
+	inventory_image = "kl_tools_stick.png^kl_tools_iron_shovel.png",
 	tool_capabilities = {
 		full_punch_interval = 0.5,
 		max_drop_level = 0,
 		groupcaps = {
 			crumbly = {
-				times = {[2] = 3.00, [3] = 0.90},
+				times = {[2] = 3.00, [3] = 0.60},
 				uses = 0,
 				maxlevel = 1,
 			},
@@ -42,25 +37,21 @@ minetest.register_craftitem(":kl_items:iron_pickaxe", {
 				times = {[3] = 0.40},
 				uses = 0,
 				maxlevel = 1,
-			},
-			cracky = {
-				times = {[1] = 2.0, [2] = 2.0, [3] = 2.0},
-				uses = 0,
 			},
 		},
 		damage_groups = {fleshy = 1},
 	}
 })
 
-minetest.register_craftitem(":kl_items:cobalt_pickaxe", {
-	description = "Cobalt Pickaxe",
-	inventory_image = "kl_tools_cobalt_pickaxe.png",
+minetest.register_craftitem(":kl_items:cobalt_shovel", {
+	description = "Cobalt Shovel",
+	inventory_image = "kl_tools_stick.png^kl_tools_cobalt_shovel.png",
 	tool_capabilities = {
 		full_punch_interval = 0.5,
 		max_drop_level = 0,
 		groupcaps = {
 			crumbly = {
-				times = {[2] = 3.00, [3] = 0.90},
+				times = {[2] = 3.00, [3] = 0.50},
 				uses = 0,
 				maxlevel = 1,
 			},
@@ -68,25 +59,21 @@ minetest.register_craftitem(":kl_items:cobalt_pickaxe", {
 				times = {[3] = 0.40},
 				uses = 0,
 				maxlevel = 1,
-			},
-			cracky = {
-				times = {[1] = 1.50, [2] = 1.50, [3] = 1.50},
-				uses = 0,
 			},
 		},
 		damage_groups = {fleshy = 1},
 	}
 })
 
-minetest.register_craftitem(":kl_items:diamond_pickaxe", {
-	description = "Diamond Pickaxe",
-	inventory_image = "kl_tools_diamond_pickaxe.png",
+minetest.register_craftitem(":kl_items:diamond_shovel", {
+	description = "Diamond Shovel",
+	inventory_image = "kl_tools_stick.png^kl_tools_diamond_shovel.png",
 	tool_capabilities = {
 		full_punch_interval = 0.5,
 		max_drop_level = 0,
 		groupcaps = {
 			crumbly = {
-				times = {[2] = 0.50, [3] = 0.70},
+				times = {[2] = 3.00, [3] = 0.20},
 				uses = 0,
 				maxlevel = 1,
 			},
@@ -94,25 +81,21 @@ minetest.register_craftitem(":kl_items:diamond_pickaxe", {
 				times = {[3] = 0.40},
 				uses = 0,
 				maxlevel = 1,
-			},
-			cracky = {
-				times = {[1] = 0.50, [2] = 0.50, [3] = 0.50},
-				uses = 0,
 			},
 		},
 		damage_groups = {fleshy = 1},
 	}
 })
 
-minetest.register_craftitem(":kl_items:mese_pickaxe", {
-	description = "Mese Pickaxe",
-	inventory_image = "kl_tools_mese_pickaxe.png",
+minetest.register_craftitem(":kl_items:mese_shovel", {
+	description = "Mese Shovel",
+	inventory_image = "kl_tools_stick.png^kl_tools_mese_shovel.png",
 	tool_capabilities = {
 		full_punch_interval = 0.5,
 		max_drop_level = 0,
 		groupcaps = {
 			crumbly = {
-				times = {[2] = 0.50, [3] = 0.70},
+				times = {[2] = 3.00, [3] = 0.20},
 				uses = 0,
 				maxlevel = 1,
 			},
@@ -120,25 +103,21 @@ minetest.register_craftitem(":kl_items:mese_pickaxe", {
 				times = {[3] = 0.40},
 				uses = 0,
 				maxlevel = 1,
-			},
-			cracky = {
-				times = {[1] = 0.75, [2] = 0.75, [3] = 0.75},
-				uses = 0,
 			},
 		},
 		damage_groups = {fleshy = 1},
 	}
 })
 
-minetest.register_craftitem(":kl_items:ketchup_pickaxe", {
-	description = "Ketchup Pickaxe",
-	inventory_image = "kl_tools_ketchup_pickaxe.png",
+minetest.register_craftitem(":kl_items:ketchup_shovel", {
+	description = "Ketchup Shovel",
+	inventory_image = "kl_tools_stick.png^kl_tools_ketchup_shovel.png",
 	tool_capabilities = {
 		full_punch_interval = 0.5,
 		max_drop_level = 0,
 		groupcaps = {
 			crumbly = {
-				times = {[2] = 3.00, [3] = 0.90},
+				times = {[2] = 3.00, [3] = 0.70},
 				uses = 0,
 				maxlevel = 1,
 			},
@@ -146,10 +125,6 @@ minetest.register_craftitem(":kl_items:ketchup_pickaxe", {
 				times = {[3] = 0.40},
 				uses = 0,
 				maxlevel = 1,
-			},
-			cracky = {
-				times = {[1] = 2.50, [2] = 2.50, [3] = 2.50},
-				uses = 0,
 			},
 		},
 		damage_groups = {fleshy = 1},

@@ -40,4 +40,13 @@ for source, material in pairs(tool_materials) do
 			{s,e},
 		}
 	})
+
+	minetest.register_craft({
+		output = prefix.."_shovel",
+		recipe = {
+			{m},
+			{s},
+			{s},
+		}
+	})
 end
