@@ -1,40 +1,43 @@
 
 local tool_materials = {
-	stone = "rock",
-	"iron",
-	"cobalt",
-	"diamond",
-	"mese"}
+	rock	= "stone",
+	iron	= "iron",
+	cobalt	= "cobalt",
+	diamond	= "diamond",
+	mese	= "mese"}
 
-for k,v in pairs(tool_materials) do
-	local m = "kl_items:"..v
-	local s = "kl_items:stick"
-	local p,a
-	if not is_numeric(k) then
-		p = "kl_items:"..k.."_pickaxe"
-		a = "kl_items:"..k.."_axe"
-	else
-		p = "kl_items:"..v.."_pickaxe"
-		a = "kl_items:"..v.."_axe"
-	end
+for source, material in pairs(tool_materials) do
+	local m = "kl_items:"..source	-- Material
+	local s = "kl_items:stick"		-- Stick
+	local e = ""					-- Empty
+
+	local prefix = "kl_items"..material
 
 	-- Pickaxes
 	minetest.register_craft({
-		output = p,
+		output = prefix.."_pickaxe",
 		recipe = {
 			{m,m,m},
-			{"",s,""},
-			{"",s,""},
+			{e,s,e},
+			{e,s,e},
 		}
 	})
 
-	-- Axes
+	-- Axes (Left-leaning and right-leaning respectively)
 	minetest.register_craft({
-		output = a,
+		output = prefix.."_axe",
 		recipe = {
 			{m,m},
 			{m,s},
-			{"",s},
+			{e,s},
+		}
+	})
+	minetest.register_craft({
+		output = prefix.."_axe",
+		recipe = {
+			{m,m},
+			{s,m},
+			{s,e},
 		}
 	})
 end
