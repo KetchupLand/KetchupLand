@@ -168,6 +168,21 @@ minetest.register_node('kl_nodes:dirt_with_grass', {
 	is_ground_content = true
 })
 
+minetest.register_node('kl_nodes:pathway', {
+	description = 'Pathway',
+	drop = "kl_nodes:dirt",
+	tiles = { 'kl_nodes_pathway.png', 'kl_nodes_dirt.png' },
+	groups = { crumbly = 3 },
+	drawtype = "nodebox",
+	paramtype = "light",
+	node_box = {
+		type = "fixed",
+		fixed = {
+			{-0.5, -0.5, -0.5, 0.5, 0.4375, 0.5}
+		}
+	}
+})
+
 minetest.register_node('kl_nodes:rocky_dirt', {
 	description = 'Dirt with Rocks',
 	tiles = { 'kl_nodes_dirt.png^kl_nodes_rocks.png' },
