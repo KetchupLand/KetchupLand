@@ -4,10 +4,28 @@ minetest.register_on_joinplayer(function(player)
 		visual_size = { x = 1, y = 1.5 },
 		textures = { "player.png", "player_back.png" },
 	})
+
 	player:set_sky({
-		base_color = "#000080",
-		type = 'plain',
+		base_color = "#2a3fff",
+		type = "regular",
+		sky_color = {
+			day_sky = "#2a3fff",
+			day_horizon = "#2a3fff",
+
+			dawn_sky = "#ffbf00",
+			dawn_horizon = "#ffbf00",
+
+			night_sky = "#0000ff",
+			night_horizon = "#0000ff",
+
+			indoors = "#787878",
+		}
 	})
+
+	player:set_sun({
+		sunrise_visible = false
+	})
+
 	player:set_clouds({
 		density = 0.3,
 		color = "#ffffff8f",
