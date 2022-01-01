@@ -235,6 +235,13 @@ minetest.register_node('kl_nodes:leaves', {
 	is_ground_content = true
 })
 
+minetest.register_node('kl_nodes:birch_leaves', {
+	description = 'Birch Leaves',
+	tiles = { 'birch_leaves_texture.png' },
+	groups = { snappy = 3, leaves = 1 },
+	is_ground_content = true
+})
+
 minetest.register_node('kl_nodes:volcanic_leaves', {
 	description = 'Volcanic Leaves',
 	tiles = { 'kl_nodes_volcanic_leaves.png' },
@@ -268,6 +275,14 @@ minetest.register_node('kl_nodes:leaves_with_tomato', {
 	is_ground_content = true
 })
 
+minetest.register_node('kl_nodes:birch_leaves_with_tomato', {
+	description = 'Birch Leaves with Tomato',
+	drop = 'kl_items:tomato',
+	tiles = { 'birch_leaves_with_tomato_texture.png' },
+	groups = { snappy = 3, leaves = 1 },
+	is_ground_content = true
+})
+
 minetest.register_node('kl_nodes:cactus', {
 	description = 'Cactus',
 	tiles = { 'kl_nodes_cactus.png' },
@@ -295,6 +310,13 @@ minetest.register_node('kl_nodes:tree', {
 	is_ground_content = true
 })
 
+minetest.register_node('kl_nodes:birch_tree', {
+	description = 'Birch Tree',
+	tiles = { 'birch_tree_texture.png' },
+	groups = { choppy = 3 },
+	is_ground_content = true
+})
+
 minetest.register_node('kl_nodes:volcanic_tree', {
 	description = 'Volcanic Tree',
 	tiles = { 'kl_nodes_volcanic_tree.png' },
@@ -305,6 +327,13 @@ minetest.register_node('kl_nodes:volcanic_tree', {
 minetest.register_node('kl_nodes:planks', {
 	description = 'Planks',
 	tiles = { 'kl_nodes_planks.png' },
+	groups = { choppy = 3, planks = 1 },
+	is_ground_content = true
+})
+
+minetest.register_node('kl_nodes:birch_planks', {
+	description = 'Birch Planks',
+	tiles = { 'birch_planks_texture.png' },
 	groups = { choppy = 3, planks = 1 },
 	is_ground_content = true
 })

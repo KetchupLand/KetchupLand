@@ -64,6 +64,19 @@ minetest.register_decoration({
 })
 
 minetest.register_decoration({
+	deco_type = "schematic",
+	place_on = "kl_nodes:dirt_with_grass",
+	sidelen = 16,
+	biomes = {"birch_forest"},
+	height = 2,
+	y_min = 0,
+	y_max = 1000,
+	schematic = mts("birch_tree"),
+	flags = "place_center_x, place_center_z, force_placement",
+	rotation = "random",
+})
+
+minetest.register_decoration({
 	decoration = "kl_nodes:stone_spike",
 	deco_type = "simple",
 	place_on = "kl_nodes:stone",
