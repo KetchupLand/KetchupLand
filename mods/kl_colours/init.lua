@@ -2,7 +2,7 @@
 local colours = {
 	white		= "White",
 	orange		= "Orange",
-	magenta		= "Magenta",
+	purple		= "Purple",
 	turqoise	= "Turqoise",
 	yellow		= "Yellow",
 	lime		= "Lime",
@@ -10,7 +10,7 @@ local colours = {
 	grey		= "Grey",
 	light_grey	= "Light Grey",
 	cyan		= "Cyan",
-	purple		= "Purple",
+	violet		= "Violet",
 	blue		= "Blue",
 	brown		= "Brown",
 	green		= "Green",
