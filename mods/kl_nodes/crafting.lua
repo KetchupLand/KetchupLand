@@ -12,15 +12,6 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "kl_nodes:chest",
-	recipe = {
-		{"group:planks", "group:planks", "group:planks"},
-		{"group:planks", "kl_items:iron", "group:planks"},
-		{"group:planks", "group:planks", "group:planks"},
-	}
-})
-
-minetest.register_craft({
 	output = "kl_items:rock",
 	recipe = {
 		{"group:rocky"},
