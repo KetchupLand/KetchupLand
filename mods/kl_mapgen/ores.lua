@@ -113,6 +113,17 @@ minetest.register_ore({
 
 minetest.register_ore({
 	ore_type = "scatter",
+	ore = "kl_nodes:diamond_ore",
+	wherein = "kl_nodes:stone",
+	clust_scarcity = 525*3,
+	clust_num_ores = 6,
+	clust_size = 5,
+	y_min = -31000,
+	y_max = -100,
+})
+
+minetest.register_ore({
+	ore_type = "scatter",
 	ore = "kl_nodes:obsidian",
 	wherein = "kl_nodes:stone",
 	clust_scarcity = 525*3,

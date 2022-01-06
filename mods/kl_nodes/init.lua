@@ -77,7 +77,13 @@ minetest.register_node('kl_nodes:jade_ore', {
 	is_ground_content = true
 })
 
-
+minetest.register_node('kl_nodes:diamond_ore', {
+	description = 'Diamond Ore',
+	drop = 'kl_items:diamond',
+	tiles = { 'kl_nodes_stone.png^kl_items_diamond.png' },
+	groups = { cracky = 3 },
+	is_ground_content = true
+})
 
 minetest.register_node('kl_nodes:mese_ore', {
 	description = 'Mese Ore',

@@ -101,7 +101,7 @@ minetest.register_craft({
 local materials = {"coal", "iron", "cobalt", "jade", "ruby", "diamond", "mese"}
 local stones = {"stone", "sandstone"}
 local dirts = {"dirt","volcanic_dirt",}
-local ores = {"iron", "cobalt", "jade", "ruby", "mese"}
+local ores = {"iron", "cobalt", "jade", "ruby","diamond" ,"mese"}
 
 local leaves = {
 	{
