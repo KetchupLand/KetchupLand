@@ -11,7 +11,7 @@ for source, material in pairs(tool_materials) do
 	local s = "kl_items:stick"		-- Stick
 	local e = ""					-- Empty
 
-	local prefix = "kl_items"..material
+	local prefix = "kl_items:"..material
 
 	-- Pickaxes
 	minetest.register_craft({
