@@ -2,6 +2,10 @@ function mts(name)
 	return minetest.get_modpath("kl_mapgen").."/schematics/"..name..".mts"
 end
 
+minetest.register_alias('mapgen_stone', 'kl_nodes:stone')
+minetest.register_alias('mapgen_water_source', 'kl_nodes:water_source')
+minetest.register_alias('mapgen_river_water_source', 'kl_nodes:river_water_source')
+
 include('ores')
 include('decor')
 
@@ -13,8 +17,8 @@ minetest.register_biome({
 	depth_top = 1,
 	node_filler = "kl_nodes:dirt",
 	depth_filler = 3,
-	node_riverbed = "kl_nodes:stone",
-	depth_riverbed = 2,
+	node_riverbed = "kl_nodes:sand",
+	depth_riverbed = 5,
 	y_max = 31000,
 	y_min = 5,
 	heat_point = 30,
@@ -27,8 +31,8 @@ minetest.register_biome({
 	depth_top = 1,
 	node_filler = "kl_nodes:dirt",
 	depth_filler = 3,
-	node_riverbed = "kl_nodes:stone",
-	depth_riverbed = 2,
+	node_riverbed = "kl_nodes:sand",
+	depth_riverbed = 5,
 	y_max = 31000,
 	y_min = 5,
 	heat_point = 20,
