@@ -36,10 +36,10 @@ minetest.register_decoration({
 
 minetest.register_decoration({
 	deco_type = "schematic",
-	place_on = "kl_nodes:dirt_with_grass",
+	place_on = {"kl_nodes:dirt_with_grass", "kl_nodes:dirt_with_snowy_grass"},
 	sidelen = 16,
 	fill_ratio = 0.002,
-	biomes = {"forest","plains"},
+	biomes = {"forest","plains","tundra"},
 	height = 0,
 	y_min = 0,
 	y_max = 32000,
@@ -151,6 +151,40 @@ minetest.register_decoration({
 	y_min = 5,
 	place_offset_y = -15,
 	schematic = mts("pyramid"),
+	flags = "place_center_x, place_center_z, force_placement",
+	rotation = "random",
+})
+
+minetest.register_decoration({
+	decoration = "kl_nodes:pine_bush",
+	deco_type = "simple",
+	place_on = "kl_nodes:dirt_with_snowy_grass",
+	sidelen = 16,
+	fill_ratio = 0.008,
+	biomes = {"tundra"},
+		noise_params = {
+		offset = 0.01,
+		scale = 0.008,
+		spread = {x = 250, y = 250, z = 250},
+		seed = 2,
+		octaves = 3,
+		persist = 0.66
+	},
+	y_min = 1,
+	y_max = 80,
+})
+
+minetest.register_decoration({
+	deco_type = "schematic",
+	place_on = "kl_nodes:dirt_with_snowy_grass",
+	sidelen = 4,
+	fill_ratio = 0.02,
+	biomes = {"tundra"},
+	height = 2,
+	y_min = 0,
+	y_max = 1000,
+	place_offset_y = 0,
+	schematic = mts("pine_tree"),
 	flags = "place_center_x, place_center_z, force_placement",
 	rotation = "random",
 })

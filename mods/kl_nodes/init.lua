@@ -73,6 +73,14 @@ minetest.register_node('kl_nodes:dirt_with_grass', {
 	is_ground_content = true
 })
 
+minetest.register_node('kl_nodes:dirt_with_snowy_grass', {
+	description = 'Dirt with Snowy Grass',
+	drop = "kl_nodes:dirt",
+	tiles = { 'kl_nodes_snowy_grass.png', 'kl_nodes_dirt.png', 'kl_nodes_snowy_grass_side.png' },
+	groups = { crumbly = 3 },
+	is_ground_content = true
+})
+
 minetest.register_node('kl_nodes:pathway', {
 	description = 'Pathway',
 	drop = "kl_nodes:dirt",
@@ -191,6 +199,31 @@ minetest.register_node('kl_nodes:cactus_with_tomato', {
 	is_ground_content = true
 })
 
+minetest.register_node('kl_nodes:pine_leaves', {
+	description = 'Pine Leaves',
+	tiles = { 'kl_nodes_pine_leaves.png' },
+	groups = { snappy = 3, leaves = 1 },
+	is_ground_content = true
+})
+
+minetest.register_node('kl_nodes:pine_leaves_with_ice_tomato', {
+	description = 'Pine Leaves with Ice Tomato',
+	drop = 'kl_items:ice_tomato',
+	tiles = { 'kl_nodes_pine_leaves.png^kl_items_ice_tomato.png' },
+	groups = { snappy = 3, leaves = 1 },
+	is_ground_content = true
+})
+
+minetest.register_node('kl_nodes:pine_bush', {
+	description = 'Pine Bush',
+	drawtype = "allfaces_optional",
+	paramtype = "light",
+	tiles = { 'kl_nodes_pine_leaves.png' },
+	groups = { snappy = 3, leaves = 1 },
+	is_ground_content = true,
+	walkable = false
+})
+
 --choppy/wooden nodes
 
 minetest.register_node('kl_nodes:tree', {
@@ -207,6 +240,13 @@ minetest.register_node('kl_nodes:volcanic_tree', {
 	is_ground_content = true
 })
 
+minetest.register_node('kl_nodes:pine_tree', {
+	description = 'Pine Tree',
+	tiles = { 'kl_nodes_pine_tree.png' },
+	groups = { choppy = 3 },
+	is_ground_content = true
+})
+
 minetest.register_node('kl_nodes:planks', {
 	description = 'Planks',
 	tiles = { 'kl_nodes_planks.png' },
@@ -217,6 +257,13 @@ minetest.register_node('kl_nodes:planks', {
 minetest.register_node('kl_nodes:volcanic_planks', {
 	description = 'Volcanic Planks',
 	tiles = { 'kl_nodes_volcanic_planks.png' },
+	groups = { choppy = 3, planks = 1 },
+	is_ground_content = true
+})
+
+minetest.register_node('kl_nodes:pine_planks', {
+	description = 'Pine Planks',
+	tiles = { 'kl_nodes_pine_planks.png' },
 	groups = { choppy = 3, planks = 1 },
 	is_ground_content = true
 })
@@ -259,4 +306,40 @@ minetest.register_node('kl_nodes:rope', {
 	walkable = false,
 	climbable = true,
 	groups = { oddly_breakable_by_hand = 3 },
+})
+
+minetest.register_node('kl_nodes:snow_node', {
+	description = 'Snow Node',
+	tiles = { 'kl_nodes_snow.png' },
+	groups = { oddly_breakable_by_hand = 3 },
+	is_ground_content = true,
+})
+
+minetest.register_node('kl_nodes:snow', {
+	description = 'Snow',
+	tiles = { 'kl_nodes_snow.png' },
+	groups = { oddly_breakable_by_hand = 3, falling_node = 1 },
+	is_ground_content = true,
+	sunlight_propagates = true,
+	walkable = false,
+	buildable_to = true,
+	drop = 'kl_items:snowball',
+	drawtype = "nodebox",
+	paramtype = "light",
+	node_box = {
+		type = "fixed",
+		fixed = {
+			{-0.5, -0.5, -0.5, 0.5, -0.3125, 0.5}, -- NodeBox1
+		}
+	},
+})
+
+minetest.register_node('kl_nodes:ice', {
+	description = 'Ice',
+	tiles = { 'kl_nodes_ice.png' },
+	drawtype = "glasslike",
+	paramtype = "light",
+	use_texture_alpha = "blend",
+	groups = { oddly_breakable_by_hand = 3, slippery = 5 },
+	is_ground_content = true,
 })

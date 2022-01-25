@@ -52,7 +52,7 @@ local beach_biomes = {
 	desert = {
 		heat = 69,
 		humidity = 12
-	}
+	},
 }
 
 for k,v in pairs(beach_biomes) do
@@ -82,6 +82,40 @@ minetest.register_biome({
 })
 
 minetest.register_biome({
+	name = "tundra_beach",
+	node_top = "kl_nodes:sand",
+	depth_top = 2,
+	node_dust = "kl_nodes:snow",
+	y_max = 4,
+	y_min = -10,
+	heat_point = 4,
+	humidity_point = 86,
+})
+
+minetest.register_biome({
+	name = "snowy_plains",
+	node_top = "kl_nodes:sand",
+	depth_top = 2,
+	node_dust = "kl_nodes:snow",
+	y_max = 4,
+	y_min = -10,
+	heat_point = 5,
+	humidity_point = 64,
+})
+
+minetest.register_biome({
+	name = "glaciers",
+	node_top = "kl_nodes:sand",
+	depth_top = 2,
+	node_water_top = "kl_nodes:ice",
+    depth_water_top = 3,
+	y_max = 4,
+	y_min = -10,
+	heat_point = 1,
+	humidity_point = 96,
+})
+
+minetest.register_biome({
 	name = "volcano",
 	node_filler = "kl_nodes:obsidian",
 	depth_filler = 16,
@@ -105,4 +139,33 @@ minetest.register_biome({
 	y_min = 5,
 	heat_point = 69,
 	humidity_point = 12,
+})
+
+minetest.register_biome({
+	name = "tundra",
+	node_top = "kl_nodes:dirt_with_snowy_grass",
+	depth_top = 1,
+	node_filler = "kl_nodes:dirt",
+	depth_filler = 3,
+	node_riverbed = "kl_nodes:sand",
+	depth_riverbed = 5,
+	node_dust = "kl_nodes:snow",
+	y_max = 31000,
+	y_min = 5,
+	heat_point = 4,
+	humidity_point = 86,
+})
+
+minetest.register_biome({
+	name = "snowy_plains",
+	node_top = "kl_nodes:dirt_with_snowy_grass",
+	depth_top = 1,
+	node_filler = "kl_nodes:dirt",
+	depth_filler = 3,
+	node_riverbed = "kl_nodes:sand",
+	depth_riverbed = 5,
+	y_max = 31000,
+	y_min = 5,
+	heat_point = 5,
+	humidity_point = 64,
 })

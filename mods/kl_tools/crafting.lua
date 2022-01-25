@@ -4,7 +4,9 @@ local tool_materials = {
 	iron	= "iron",
 	cobalt	= "cobalt",
 	diamond	= "diamond",
-	mese	= "mese"}
+	mese	= "mese",
+	ketchup_bottle = "ketchup"
+}
 
 for source, material in pairs(tool_materials) do
 	local m = "kl_items:"..source	-- Material

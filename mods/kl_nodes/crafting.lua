@@ -68,20 +68,18 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "kl_items:ketchup_pickaxe",
+	output = "kl_nodes:snow_node",
 	recipe = {
-		{"kl_items:ketchup_bottle","kl_items:ketchup_bottle","kl_items:ketchup_bottle"},
-		{"","kl_items:stick",""},
-		{"","kl_items:stick",""},
+		{"kl_items:snowball", "kl_items:snowball", "kl_items:snowball"},
+		{"kl_items:snowball", "kl_items:snowball", "kl_items:snowball"},
+		{"kl_items:snowball", "kl_items:snowball", "kl_items:snowball"},
 	}
 })
 
 minetest.register_craft({
-	output = "kl_items:ketchup_axe",
+	output = "kl_nodes:snow",
 	recipe = {
-		{"kl_items:ketchup_bottle","kl_items:ketchup_bottle"},
-		{"kl_items:ketchup_bottle","kl_items:stick"},
-		{"","kl_items:stick"},
+		{"kl_items:snowball", "kl_items:snowball", "kl_items:snowball"},
 	}
 })
 
@@ -104,6 +102,9 @@ local leaves = {
 	}, {
 		tomato = "tomato",
 		leaves = "cactus"
+	}, {
+		tomato = "ice_tomato",
+		leaves = "pine_leaves"
 	}
 }
 local trees = {
@@ -113,6 +114,9 @@ local trees = {
 	},	{
 		tree = "volcanic_tree",
 		plank = "volcanic_planks"
+	}, {
+		tree = "pine_tree",
+		plank = "pine_planks"
 	},
 }
 local ketchup = {
@@ -122,6 +126,9 @@ local ketchup = {
 	}, {
 		tomato = "chili_tomato",
 		ketchup = "chili_ketchup"
+	}, {
+		tomato = "ice_tomato",
+		ketchup = "ice_ketchup"
 	},
 }
 

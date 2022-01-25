@@ -95,7 +95,7 @@ register_stair_and_slab(
 	'kl_nodes:planks',
 	{ choppy = 3 },
 	{'kl_nodes_planks.png'},
-	'Plank'
+	'Planks'
 )
 
 register_stair_and_slab(
@@ -103,7 +103,15 @@ register_stair_and_slab(
 	'kl_nodes:volcanic_planks',
 	{ choppy = 3 },
 	{'kl_nodes_volcanic_planks.png'},
-	'Volcanic Plank'
+	'Volcanic Planks'
+)
+
+register_stair_and_slab(
+	'pine_planks',
+	'kl_nodes:pine_planks',
+	{ choppy = 3 },
+	{'kl_nodes_pine_planks.png'},
+	'Pine Planks'
 )
 
 register_stair_and_slab(

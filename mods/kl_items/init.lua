@@ -1,3 +1,4 @@
+include("snowball")
 
 minetest.register_craftitem("kl_items:rock", {
 	description = "Rock",
@@ -67,6 +68,25 @@ minetest.register_craftitem("kl_items:chili_tomato", {
 	end,
 })
 
+minetest.register_craftitem("kl_items:ice_tomato", {
+	description = "Ice Tomato",
+	inventory_image = "kl_items_ice_tomato.png",
+	on_use = function(itemstack,user)
+		user:set_physics_override({
+			speed = 0.65
+		})
+		minetest.after(5, function()
+			user:set_physics_override({
+				speed = 1
+			})
+		end, user)
+		local hp = user:get_hp()
+		user:set_hp(hp+1)
+		local count = itemstack:get_count()
+		return "kl_items:ice_tomato "..count-1
+	end,
+})
+
 --ketchup
 
 minetest.register_craftitem("kl_items:bottle", {
@@ -90,6 +110,27 @@ minetest.register_craftitem("kl_items:ketchup_bottle", {
 minetest.register_craftitem("kl_items:chili_ketchup_bottle", {
 	description = "Bottle with Chili Ketchup",
 	inventory_image = "kl_items_bottle_with_chili_ketchup.png",
+	on_use = function(itemstack,user)
+		user:set_physics_override({
+			speed = 2
+		})
+		minetest.after(10, function()
+			user:set_physics_override({
+				speed = 1
+			})
+		end, user)
+		local hp = user:get_hp()
+		user:set_hp(hp+10)
+		local count = itemstack:get_count()
+		local inv = user:get_inventory()
+		inv:add_item("main", "kl_items:bottle")
+		return "kl_items:chili_ketchup_bottle "..count-1
+	end,
+})
+
+minetest.register_craftitem("kl_items:ice_ketchup_bottle", {
+	description = "Bottle with Ice Ketchup",
+	inventory_image = "kl_items_bottle_with_ice_ketchup.png",
 	on_use = function(itemstack,user)
 		user:set_physics_override({
 			speed = 2
