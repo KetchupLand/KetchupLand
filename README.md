@@ -17,7 +17,8 @@ KetchupLand work-in-progress is a free and open-source 3D open-world adventure s
 
 ##  [Latest Commit](https://github.com/KetchupLand/KetchupLand/archive/refs/heads/main.zip)
 
-It is possible to play KetchupLand via the latest Minetest version (currently 5.5), but it is encouraged to use the [KetchupLand Launcher](https://ketchupland.github.io/new-site/download).
+You need to download [Minetest](https://minetest.net) in order to play the game. Latest version is preferred (currently 5.5).
+
 
 
 ## License
