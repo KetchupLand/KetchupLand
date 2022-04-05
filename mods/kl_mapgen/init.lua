@@ -23,6 +23,7 @@ minetest.register_biome({
 	y_min = 5,
 	heat_point = 30,
 	humidity_point = 70,
+	_safe_spawn = true
 })
 
 minetest.register_biome({
@@ -37,6 +38,7 @@ minetest.register_biome({
 	y_min = 5,
 	heat_point = 20,
 	humidity_point = 20,
+	_safe_spawn = true
 })
 
 -- This is the way it is to prevent ash beaches from showing up where they shouldn't. Dumb fucking shit.
@@ -154,6 +156,7 @@ minetest.register_biome({
 	y_min = 5,
 	heat_point = 4,
 	humidity_point = 86,
+	_safe_spawn = true
 })
 
 minetest.register_biome({
@@ -168,4 +171,5 @@ minetest.register_biome({
 	y_min = 5,
 	heat_point = 5,
 	humidity_point = 64,
+	_safe_spawn = true
 })
