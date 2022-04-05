@@ -1,7 +1,6 @@
 include('liquids')
 
 include('stairs')
-include('chests')
 
 include('crafting')
 
