@@ -83,6 +83,15 @@ minetest.register_craft({
 	}
 })
 
+minetest.register_craft({
+	output = "kl_nodes:torch 4",
+	recipe = {
+		{"kl_items:coal"},
+		{"kl_items:stick"},
+
+	}
+})
+
 ----loopz
 
 --tables
