@@ -1,5 +1,4 @@
-
-<p align="center"><img width=500 src="https://github.com/KetchupLand/KetchupLand/blob/main/menu/header.png"></p>
+<p align="center"><img width=500 src="https://media.discordapp.net/attachments/846323066752598042/955038773241061436/unknown.png"></p>
 
 ---
 
@@ -12,15 +11,11 @@
 	<img src="https://content.minetest.net/packages/danil_2461/ketchupland/shields/downloads/">
 </p>
 
+KetchupLand is a work-in-progress free and open-source 3D open-world adventure sandbox game, built on the Minetest voxel game engine and made in the style of old games from the Windows 95 era, complete with 256 color VGA graphics. Collect resources to survive the harsh caves, dry deserts, hot volcanoes and freezing tundras in the land of the ketchup, harvesting tomatoes and exploring the vast worlds and beautiful biomes for better resources and tomatoes.
 
-KetchupLand work-in-progress is a free and open-source 3D open-world adventure sandbox game, built on the Minetest voxel game engine made in the style of old games from the Windows 95 era, complete with 256 color VGA graphics. It is based around you collecting resources to survive the harsh caves, dry deserts, hot volcanoes and freezing tundras of the land of the ketchup, harvesting tomatoes and exploring the vast worlds and beautiful biomes for better resources and tomatoes.
-
-##  [Latest Commit](https://github.com/KetchupLand/KetchupLand/archive/refs/heads/main.zip)
-
-You need to download [Minetest](https://minetest.net) in order to play the game. Latest version is preferred (currently 5.5).
-
-
+You need [Minetest](https://minetest.net) in order to play the game. You can install KetchupLand from the in-game content browser (recommended) or alternatively clone this source repo using Git into the Minetest `games` folder.
 
 ## License
-The game (code and assets) is licensed under the GPL v3.  
+The KetchupLand game (includes code and assets) is licensed under the GPL v3.  
 
+<sup>KetchupLand is a fork of the KetchupTest game originally developed by Tim7 and was licensed under the MIT license.</sup>
