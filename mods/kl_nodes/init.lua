@@ -1,7 +1,5 @@
 include('liquids')
 
-include('stairs')
-
 include('crafting')
 
 include('materials')
@@ -342,3 +340,5 @@ minetest.register_node('kl_nodes:ice', {
 	groups = { oddly_breakable_by_hand = 3, slippery = 5 },
 	is_ground_content = true,
 })
+
+include('stairs')
