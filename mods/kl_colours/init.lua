@@ -25,4 +25,7 @@ for name,desc in pairs(colours) do
 		tiles = {"kl_colours_wool_" .. name .. ".png"},
 		groups = {snappy = 3, wool = 1}
 	})
+
+	-- Respective slabs and stairs
+	kl_stairs.register("kl_nodes:wool_"..name)
 end
