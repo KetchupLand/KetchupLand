@@ -59,8 +59,8 @@ function get_inventory_formspec(playername)
 end
 
 minetest.register_on_joinplayer(function(player)
-	--player:hud_set_hotbar_image("gui_hotbar.png")
-	--player:hud_set_hotbar_selected_image("gui_hotbar_selected.png")
+	player:hud_set_hotbar_image("kl_gui_hotbar.png")
+	player:hud_set_hotbar_selected_image("kl_gui_hotbar_selected.png")
 	player:get_inventory():set_width("main", 9)
 	player:get_inventory():set_size("main", 36)
 	player:hud_set_hotbar_itemcount(9)
