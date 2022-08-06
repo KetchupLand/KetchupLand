@@ -8,6 +8,7 @@ minetest.register_alias('mapgen_river_water_source', 'kl_nodes:river_water_sourc
 
 include('ores')
 include('decor')
+include('abm')
 
 --biomes
 
