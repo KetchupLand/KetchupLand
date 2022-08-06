@@ -7,7 +7,7 @@ minetest.register_abm({
 	action = function(pos, node)
 		local above = {x = pos.x, y = pos.y + 1, z = pos.z}
 		local heat = minetest.get_biome_data(pos).heat
-		if minetest.get_node(above).name ~= "air" and minetest.get_node(above).name ~= "kl_nodes:snow" or (minetest.get_node_light(above) or 0) < 13 or heat >= 90 then
+		if minetest.get_node(above).name ~= "air" and minetest.get_node(above).name ~= "kl_nodes:snow" or (minetest.get_node_light(above, 0.5) or 0) < 13 or heat >= 90 then
 			minetest.set_node(pos, {name = "kl_nodes:dirt"})
 			return
 		end
@@ -29,7 +29,7 @@ minetest.register_abm({
 	action = function(pos, node)
 		local below = {x = pos.x, y = pos.y - 1, z = pos.z}
 		local heat = minetest.get_biome_data(pos).heat
-		if (minetest.get_node_light(below) or 0) < 14 and heat <= 12 and  minetest.get_node(below).name ~= "air" and minetest.get_node(below).name ~= "kl_nodes:snow" then
+		if (minetest.get_node_light(below, 0.5) or 0) < 14 and heat <= 12 and  minetest.get_node(below).name ~= "air" and minetest.get_node(below).name ~= "kl_nodes:snow" then
 			minetest.set_node(pos, {name = "kl_nodes:snow"})
 			return
 		end
