@@ -7,28 +7,18 @@ minetest.register_craftitem(":kl_items:stone_axe", {
 		full_punch_interval = 0.5,
 		max_drop_level = 0,
 		groupcaps = {
-			choppy = {
-				times = {
-					[5] = 2.5,
-					[4] = 4,
-				},
-				maxlevel = 0,
-				uses = 0,
-			},
 			crumbly = {
-				times = {
-					[5] = 3,
-					[4] = 4.5,
-				},
-				maxlevel = 0,
+				times = {[2] = 3.00, [3] = 0.70},
 				uses = 0,
+				maxlevel = 1,
 			},
 			snappy = {
-				times = {
-					[5] = 1,
-					[5] = 2.5,
-				},
-				maxlevel = 0,
+				times = {[3] = 0.40},
+				uses = 0,
+				maxlevel = 1,
+			},
+			choppy = {
+				times = {[1] = 2.50, [2] = 2.50, [3] = 2.50},
 				uses = 0,
 			},
 		},
@@ -43,29 +33,18 @@ minetest.register_craftitem(":kl_items:iron_axe", {
 		full_punch_interval = 0.5,
 		max_drop_level = 0,
 		groupcaps = {
-			choppy = {
-				times = {
-					[5] = 2,
-					[4] = 3.5,
-					[3] = 5,
-				},
-				maxlevel = 0,
-				uses = 0,
-			},
 			crumbly = {
-				times = {
-					[5] = 3,
-					[4] = 4.5,
-				},
-				maxlevel = 0,
+				times = {[2] = 3.00, [3] = 0.70},
 				uses = 0,
+				maxlevel = 1,
 			},
 			snappy = {
-				times = {
-					[5] = 1,
-					[5] = 2.5,
-				},
-				maxlevel = 0,
+				times = {[3] = 0.40},
+				uses = 0,
+				maxlevel = 1,
+			},
+			choppy = {
+				times = {[1] = 2.0, [2] = 2.0, [3] = 2.0},
 				uses = 0,
 			},
 		},
@@ -80,30 +59,18 @@ minetest.register_craftitem(":kl_items:cobalt_axe", {
 		full_punch_interval = 0.5,
 		max_drop_level = 0,
 		groupcaps = {
-			choppy = {
-				times = {
-					[5] = 1.5,
-					[4] = 3,
-					[3] = 4.5,
-					[2] = 6,
-				},
-				maxlevel = 0,
-				uses = 0,
-			},
 			crumbly = {
-				times = {
-					[5] = 3,
-					[4] = 4.5,
-				},
-				maxlevel = 0,
+				times = {[2] = 3.00, [3] = 0.70},
 				uses = 0,
+				maxlevel = 1,
 			},
 			snappy = {
-				times = {
-					[5] = 1,
-					[5] = 2.5,
-				},
-				maxlevel = 0,
+				times = {[3] = 0.40},
+				uses = 0,
+				maxlevel = 1,
+			},
+			choppy = {
+				times = {[1] = 1.50, [2] = 1.50, [3] = 1.50},
 				uses = 0,
 			},
 		},
@@ -118,31 +85,18 @@ minetest.register_craftitem(":kl_items:diamond_axe", {
 		full_punch_interval = 0.5,
 		max_drop_level = 0,
 		groupcaps = {
-			choppy = {
-				times = {
-					[5] = 1,
-					[4] = 2.5,
-					[3] = 4,
-					[2] = 5.5,
-					[1] = 7,
-				},
-				maxlevel = 0,
-				uses = 0,
-			},
 			crumbly = {
-				times = {
-					[5] = 3,
-					[4] = 4.5,
-				},
-				maxlevel = 0,
+				times = {[2] = 0.50, [3] = 0.50},
 				uses = 0,
+				maxlevel = 1,
 			},
 			snappy = {
-				times = {
-					[5] = 1,
-					[5] = 2.5,
-				},
-				maxlevel = 0,
+				times = {[3] = 0.40},
+				uses = 0,
+				maxlevel = 1,
+			},
+			choppy = {
+				times = {[1] = 0.50, [2] = 0.50, [3] = 0.50},
 				uses = 0,
 			},
 		},
@@ -157,31 +111,18 @@ minetest.register_craftitem(":kl_items:mese_axe", {
 		full_punch_interval = 0.5,
 		max_drop_level = 0,
 		groupcaps = {
-			choppy = {
-				times = {
-					[5] = 0.5,
-					[4] = 2,
-					[3] = 3.5,
-					[2] = 5,
-					[1] = 6.5,
-				},
-				maxlevel = 0,
-				uses = 0,
-			},
 			crumbly = {
-				times = {
-					[5] = 3,
-					[4] = 4.5,
-				},
-				maxlevel = 0,
+				times = {[2] = 0.50, [3] = 0.50},
 				uses = 0,
+				maxlevel = 1,
 			},
 			snappy = {
-				times = {
-					[5] = 1,
-					[5] = 2.5,
-				},
-				maxlevel = 0,
+				times = {[3] = 0.40},
+				uses = 0,
+				maxlevel = 1,
+			},
+			choppy = {
+				times = {[1] = 0.75, [2] = 0.75, [3] = 0.75},
 				uses = 0,
 			},
 		},
@@ -196,28 +137,18 @@ minetest.register_craftitem(":kl_items:ketchup_axe", {
 		full_punch_interval = 0.5,
 		max_drop_level = 0,
 		groupcaps = {
-			choppy = {
-				times = {
-					[5] = 2.25,
-					[4] = 3.75,
-				},
-				maxlevel = 0,
-				uses = 0,
-			},
 			crumbly = {
-				times = {
-					[5] = 3,
-					[4] = 4.5,
-				},
-				maxlevel = 0,
+				times = {[2] = 3.00, [3] = 0.70},
 				uses = 0,
+				maxlevel = 1,
 			},
 			snappy = {
-				times = {
-					[5] = 1,
-					[5] = 2.5,
-				},
-				maxlevel = 0,
+				times = {[3] = 0.40},
+				uses = 0,
+				maxlevel = 1,
+			},
+			choppy = {
+				times = {[1] = 2.50, [2] = 2.50, [3] = 2.50},
 				uses = 0,
 			},
 		},

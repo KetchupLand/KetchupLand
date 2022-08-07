@@ -1,7 +1,7 @@
 
 if minetest.settings:get_bool("creative_mode") then
 	local digtime = 42
-	local caps = {times = {42, 42, 42, 42, 42}, uses = 0, maxlevel = 256}
+	local caps = {times = {42, 42, 42}, uses = 0, maxlevel = 256}
 	minetest.register_item(':', {
 		type = 'none',
 		wield_image = 'kl_hand.png',
@@ -31,21 +31,12 @@ else
 			max_drop_level = 0,
 			groupcaps = {
 				snappy = {
-					times = {
-						[5] = 0.75,
-						[5] = 1.75,
-					},
-					maxlevel = 0,
+					times = {[3] = 0.40},
 					uses = 0,
+					maxlevel = 1,
 				},
 				oddly_breakable_by_hand = {
-					times = {
-						[5] = 0.50,
-						[4] = 1, 
-						[3] = 1.50,
-						[2] = 2,
-						[1] = 2.5,
-					},
+					times = {[1] = 3.50, [2] = 2.00, [3] = 0.70},
 					uses = 0,
 				},
 			},

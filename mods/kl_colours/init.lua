@@ -23,7 +23,7 @@ for name,desc in pairs(colours) do
 	minetest.register_node(":kl_nodes:wool_"..name, {
 		description = desc.." Wool",
 		tiles = {"kl_colours_wool_" .. name .. ".png"},
-		groups = {oddly_breakable_by_hand = 5, wool = 1}
+		groups = {snappy = 3, wool = 1}
 	})
 
 	-- Respective slabs and stairs
