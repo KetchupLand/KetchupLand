@@ -7,17 +7,19 @@ minetest.register_craftitem(":kl_items:stick", {
 		max_drop_level = 0,
 		groupcaps = {
 			crumbly = {
-				times = {[2] = 3.00, [3] = 0.70},
+				times = {
+					[5] = 2.5,
+					[4] = 3,
+				},
+				maxlevel = 0,
 				uses = 0,
-				maxlevel = 1,
 			},
 			snappy = {
-				times = {[3] = 0.40},
-				uses = 0,
-				maxlevel = 1,
-			},
-			crumbly = {
-				times = {[1] = 0.50, [2] = 0.50, [3] = 0.50},
+				times = {
+					[5] = 0.5,
+					[4] = 1.5,
+				},
+				maxlevel = 0,
 				uses = 0,
 			},
 		},

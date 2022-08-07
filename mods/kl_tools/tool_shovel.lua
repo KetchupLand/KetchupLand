@@ -15,14 +15,20 @@ minetest.register_craftitem(":kl_items:stone_shovel", {
 		max_drop_level = 0,
 		groupcaps = {
 			crumbly = {
-				times = {[2] = 3.00, [3] = 0.80},
+				times = {
+					[5] = 2,
+					[4] = 3.5,
+				},
+				maxlevel = 0,
 				uses = 0,
-				maxlevel = 1,
 			},
 			snappy = {
-				times = {[3] = 0.40},
+				times = {
+					[5] = 1,
+					[5] = 2.5,
+				},
+				maxlevel = 0,
 				uses = 0,
-				maxlevel = 1,
 			},
 		},
 		damage_groups = {fleshy = 1},
@@ -37,14 +43,21 @@ minetest.register_craftitem(":kl_items:iron_shovel", {
 		max_drop_level = 0,
 		groupcaps = {
 			crumbly = {
-				times = {[2] = 3.00, [3] = 0.60},
+				times = {
+					[5] = 1.5,
+					[4] = 3,
+					[3] = 4.5,
+				},
+				maxlevel = 0,
 				uses = 0,
-				maxlevel = 1,
 			},
 			snappy = {
-				times = {[3] = 0.40},
+				times = {
+					[5] = 1,
+					[5] = 2.5,
+				},
+				maxlevel = 0,
 				uses = 0,
-				maxlevel = 1,
 			},
 		},
 		damage_groups = {fleshy = 1},
@@ -59,14 +72,22 @@ minetest.register_craftitem(":kl_items:cobalt_shovel", {
 		max_drop_level = 0,
 		groupcaps = {
 			crumbly = {
-				times = {[2] = 3.00, [3] = 0.50},
+				times = {
+					[5] = 1,
+					[4] = 2.5,
+					[3] = 4,
+					[2] = 5.5,
+				},
+				maxlevel = 0,
 				uses = 0,
-				maxlevel = 1,
 			},
 			snappy = {
-				times = {[3] = 0.40},
+				times = {
+					[5] = 1,
+					[5] = 2.5,
+				},
+				maxlevel = 0,
 				uses = 0,
-				maxlevel = 1,
 			},
 		},
 		damage_groups = {fleshy = 1},
@@ -81,14 +102,23 @@ minetest.register_craftitem(":kl_items:diamond_shovel", {
 		max_drop_level = 0,
 		groupcaps = {
 			crumbly = {
-				times = {[2] = 3.00, [3] = 0.20},
+				times = {
+					[5] = 0.75,
+					[4] = 2,
+					[3] = 3.5,
+					[2] = 5,
+					[1] = 6.5,
+				},
+				maxlevel = 0,
 				uses = 0,
-				maxlevel = 1,
 			},
 			snappy = {
-				times = {[3] = 0.40},
+				times = {
+					[5] = 1,
+					[5] = 2.5,
+				},
+				maxlevel = 0,
 				uses = 0,
-				maxlevel = 1,
 			},
 		},
 		damage_groups = {fleshy = 1},
@@ -103,14 +133,23 @@ minetest.register_craftitem(":kl_items:mese_shovel", {
 		max_drop_level = 0,
 		groupcaps = {
 			crumbly = {
-				times = {[2] = 3.00, [3] = 0.20},
+				times = {
+					[5] = 0.5,
+					[4] = 1.5,
+					[3] = 3,
+					[2] = 4.5,
+					[1] = 6,
+				},
+				maxlevel = 0,
 				uses = 0,
-				maxlevel = 1,
 			},
 			snappy = {
-				times = {[3] = 0.40},
+				times = {
+					[5] = 1,
+					[5] = 2.5,
+				},
+				maxlevel = 0,
 				uses = 0,
-				maxlevel = 1,
 			},
 		},
 		damage_groups = {fleshy = 1},
@@ -125,14 +164,20 @@ minetest.register_craftitem(":kl_items:ketchup_shovel", {
 		max_drop_level = 0,
 		groupcaps = {
 			crumbly = {
-				times = {[2] = 3.00, [3] = 0.70},
+				times = {
+					[5] = 1.75,
+					[4] = 3.25,
+				},
+				maxlevel = 0,
 				uses = 0,
-				maxlevel = 1,
 			},
 			snappy = {
-				times = {[3] = 0.40},
+				times = {
+					[5] = 1,
+					[5] = 2.5,
+				},
+				maxlevel = 0,
 				uses = 0,
-				maxlevel = 1,
 			},
 		},
 		damage_groups = {fleshy = 1},

@@ -7,18 +7,28 @@ minetest.register_craftitem(":kl_items:stone_pickaxe", {
 		full_punch_interval = 0.5,
 		max_drop_level = 0,
 		groupcaps = {
-			crumbly = {
-				times = {[2] = 3.00, [3] = 0.90},
+			cracky = {
+				times = {
+					[5] = 3,
+					[4] = 4.5,
+				},
+				maxlevel = 0,
 				uses = 0,
-				maxlevel = 1,
+			},
+			crumbly = {
+				times = {
+					[5] = 3,
+					[4] = 4.5,
+				},
+				maxlevel = 0,
+				uses = 0,
 			},
 			snappy = {
-				times = {[3] = 0.40},
-				uses = 0,
-				maxlevel = 1,
-			},
-			cracky = {
-				times = {[1] = 2.50, [2] = 2.50, [3] = 2.50},
+				times = {
+					[5] = 1,
+					[5] = 2.5,
+				},
+				maxlevel = 0,
 				uses = 0,
 			},
 		},
@@ -33,18 +43,29 @@ minetest.register_craftitem(":kl_items:iron_pickaxe", {
 		full_punch_interval = 0.5,
 		max_drop_level = 0,
 		groupcaps = {
-			crumbly = {
-				times = {[2] = 3.00, [3] = 0.90},
+			cracky = {
+				times = {
+					[5] = 2.5,
+					[4] = 4,
+					[3] = 5.5,
+				},
+				maxlevel = 0,
 				uses = 0,
-				maxlevel = 1,
+			},
+			crumbly = {
+				times = {
+					[5] = 3,
+					[4] = 4.5,
+				},
+				maxlevel = 0,
+				uses = 0,
 			},
 			snappy = {
-				times = {[3] = 0.40},
-				uses = 0,
-				maxlevel = 1,
-			},
-			cracky = {
-				times = {[1] = 2.0, [2] = 2.0, [3] = 2.0},
+				times = {
+					[5] = 1,
+					[5] = 2.5,
+				},
+				maxlevel = 0,
 				uses = 0,
 			},
 		},
@@ -59,18 +80,30 @@ minetest.register_craftitem(":kl_items:cobalt_pickaxe", {
 		full_punch_interval = 0.5,
 		max_drop_level = 0,
 		groupcaps = {
-			crumbly = {
-				times = {[2] = 3.00, [3] = 0.90},
+			cracky = {
+				times = {
+					[5] = 2,
+					[4] = 3.5,
+					[3] = 5,
+					[2] = 6.5,
+				},
+				maxlevel = 0,
 				uses = 0,
-				maxlevel = 1,
+			},
+			crumbly = {
+				times = {
+					[5] = 3,
+					[4] = 4.5,
+				},
+				maxlevel = 0,
+				uses = 0,
 			},
 			snappy = {
-				times = {[3] = 0.40},
-				uses = 0,
-				maxlevel = 1,
-			},
-			cracky = {
-				times = {[1] = 1.50, [2] = 1.50, [3] = 1.50},
+				times = {
+					[5] = 1,
+					[5] = 2.5,
+				},
+				maxlevel = 0,
 				uses = 0,
 			},
 		},
@@ -85,18 +118,31 @@ minetest.register_craftitem(":kl_items:diamond_pickaxe", {
 		full_punch_interval = 0.5,
 		max_drop_level = 0,
 		groupcaps = {
-			crumbly = {
-				times = {[2] = 0.50, [3] = 0.70},
+			cracky = {
+				times = {
+					[5] = 1.5,
+					[4] = 3,
+					[3] = 4.5,
+					[2] = 6,
+					[1] = 7.5,
+				},
+				maxlevel = 0,
 				uses = 0,
-				maxlevel = 1,
+			},
+			crumbly = {
+				times = {
+					[5] = 3,
+					[4] = 4.5,
+				},
+				maxlevel = 0,
+				uses = 0,
 			},
 			snappy = {
-				times = {[3] = 0.40},
-				uses = 0,
-				maxlevel = 1,
-			},
-			cracky = {
-				times = {[1] = 0.50, [2] = 0.50, [3] = 0.50},
+				times = {
+					[5] = 1,
+					[5] = 2.5,
+				},
+				maxlevel = 0,
 				uses = 0,
 			},
 		},
@@ -111,18 +157,31 @@ minetest.register_craftitem(":kl_items:mese_pickaxe", {
 		full_punch_interval = 0.5,
 		max_drop_level = 0,
 		groupcaps = {
-			crumbly = {
-				times = {[2] = 0.50, [3] = 0.70},
+			cracky = {
+				times = {
+					[5] = 1,
+					[4] = 2.5,
+					[3] = 4,
+					[2] = 5.5,
+					[1] = 7,
+				},
+				maxlevel = 0,
 				uses = 0,
-				maxlevel = 1,
+			},
+			crumbly = {
+				times = {
+					[5] = 3,
+					[4] = 4.5,
+				},
+				maxlevel = 0,
+				uses = 0,
 			},
 			snappy = {
-				times = {[3] = 0.40},
-				uses = 0,
-				maxlevel = 1,
-			},
-			cracky = {
-				times = {[1] = 0.75, [2] = 0.75, [3] = 0.75},
+				times = {
+					[5] = 1,
+					[5] = 2.5,
+				},
+				maxlevel = 0,
 				uses = 0,
 			},
 		},
@@ -137,18 +196,28 @@ minetest.register_craftitem(":kl_items:ketchup_pickaxe", {
 		full_punch_interval = 0.5,
 		max_drop_level = 0,
 		groupcaps = {
-			crumbly = {
-				times = {[2] = 3.00, [3] = 0.90},
+			cracky = {
+				times = {
+					[5] = 2.75,
+					[4] = 4.25,
+				},
+				maxlevel = 0,
 				uses = 0,
-				maxlevel = 1,
+			},
+			crumbly = {
+				times = {
+					[5] = 3,
+					[4] = 4.5,
+				},
+				maxlevel = 0,
+				uses = 0,
 			},
 			snappy = {
-				times = {[3] = 0.40},
-				uses = 0,
-				maxlevel = 1,
-			},
-			cracky = {
-				times = {[1] = 2.50, [2] = 2.50, [3] = 2.50},
+				times = {
+					[5] = 1,
+					[5] = 2.5,
+				},
+				maxlevel = 0,
 				uses = 0,
 			},
 		},

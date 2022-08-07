@@ -40,7 +40,7 @@ minetest.register_node(":kl_nodes:chest", {
 		"kl_chests_chest_front.png"
 	},
 	paramtype2 = "facedir",
-	groups = {choppy=3},
+	groups = {choppy=4},
 	is_ground_content = false,
 	on_construct = function(pos)
 		local meta = minetest.get_meta(pos)
