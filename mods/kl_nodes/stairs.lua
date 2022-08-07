@@ -7,6 +7,7 @@ for _,node in pairs({
 	'stone_bricks',
 	'sandstone_bricks',
 	'obsidian',
+	'obsidian_bricks',
 	'planks',
 	'volcanic_planks',
 	'pine_planks',

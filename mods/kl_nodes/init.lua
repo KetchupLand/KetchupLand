@@ -23,8 +23,14 @@ minetest.register_node('kl_nodes:lapis', {
 minetest.register_node('kl_nodes:obsidian', {
 	description = 'Obsidian',
 	tiles = { 'kl_nodes_obsidian.png' },
-	groups = { cracky = 1 },
+	groups = { cracky = 2 },
 	is_ground_content = true
+})
+
+minetest.register_node('kl_nodes:obsidian_bricks', {
+	description = 'Obsidian Bricks',
+	tiles = { 'kl_nodes_obsidian_bricks.png' },
+	groups = { cracky = 1 },
 })
 
 minetest.register_node('kl_nodes:stone_spike', {
@@ -33,6 +39,7 @@ minetest.register_node('kl_nodes:stone_spike', {
 	tiles = { 'kl_nodes_stone_spike.png' },
 	inventory_image = 'kl_nodes_stone_spike.png',
 	wield_image = 'kl_nodes_stone_spike.png',
+	paramtype = "light",
 	sunlight_propagates = true,
 	walkable = false,
 	groups = { cracky = 5 },
@@ -50,14 +57,12 @@ minetest.register_node('kl_nodes:stone_bricks', {
 	description = 'Stone Bricks',
 	tiles = { 'kl_nodes_stone_bricks.png' },
 	groups = { cracky = 4 },
-	is_ground_content = true
 })
 
 minetest.register_node('kl_nodes:sandstone_bricks', {
 	description = 'Sandstone Bricks',
 	tiles = { 'kl_nodes_sandstone_bricks.png' },
 	groups = { cracky = 4 },
-	is_ground_content = true
 })
 
 --crumbly/soft dirt like nodes
