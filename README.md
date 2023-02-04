@@ -16,6 +16,6 @@ KetchupLand is a work-in-progress free and open-source 3D open-world adventure s
 You need [Minetest](https://minetest.net) in order to play the game. You can install KetchupLand from the in-game content browser (recommended) or alternatively clone this source repo using Git into the Minetest `games` folder.
 
 ## License
-The KetchupLand game (includes code and assets) is licensed under the GPL v3.  
+The KetchupLand game is licensed under the MIT license, including code and assets. For more info see the included LICENSE file.
 
 <sup>KetchupLand is a fork of the KetchupTest game originally developed by Tim7 and was licensed under the MIT license.</sup>
