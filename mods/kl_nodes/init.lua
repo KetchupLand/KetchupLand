@@ -23,14 +23,14 @@ minetest.register_node('kl_nodes:lapis', {
 minetest.register_node('kl_nodes:obsidian', {
 	description = 'Obsidian',
 	tiles = { 'kl_nodes_obsidian.png' },
-	groups = { cracky = 2 },
+	groups = { cracky = 3 },
 	is_ground_content = true
 })
 
 minetest.register_node('kl_nodes:obsidian_bricks', {
 	description = 'Obsidian Bricks',
 	tiles = { 'kl_nodes_obsidian_bricks.png' },
-	groups = { cracky = 1 },
+	groups = { cracky = 3 },
 })
 
 minetest.register_node('kl_nodes:stone_spike', {

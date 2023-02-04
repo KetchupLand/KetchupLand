@@ -7,7 +7,7 @@ minetest.register_craftitem(":kl_items:stick", {
 		max_drop_level = 0,
 		groupcaps = {
 			crumbly = {
-				times = {[2] = 3.00, [3] = 0.70},
+				times = {[3] = 0.90},
 				uses = 0,
 				maxlevel = 1,
 			},
@@ -15,10 +15,6 @@ minetest.register_craftitem(":kl_items:stick", {
 				times = {[3] = 0.40},
 				uses = 0,
 				maxlevel = 1,
-			},
-			crumbly = {
-				times = {[1] = 0.50, [2] = 0.50, [3] = 0.50},
-				uses = 0,
 			},
 		},
 		damage_groups = {fleshy = 1},

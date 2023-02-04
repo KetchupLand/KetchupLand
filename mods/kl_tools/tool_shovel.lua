@@ -15,7 +15,7 @@ minetest.register_craftitem(":kl_items:stone_shovel", {
 		max_drop_level = 0,
 		groupcaps = {
 			crumbly = {
-				times = {[2] = 3.00, [3] = 0.80},
+				times = {[3] = 0.80},
 				uses = 0,
 				maxlevel = 1,
 			},
@@ -37,7 +37,7 @@ minetest.register_craftitem(":kl_items:iron_shovel", {
 		max_drop_level = 0,
 		groupcaps = {
 			crumbly = {
-				times = {[2] = 3.00, [3] = 0.60},
+				times = {[3] = 0.60},
 				uses = 0,
 				maxlevel = 1,
 			},
@@ -59,7 +59,7 @@ minetest.register_craftitem(":kl_items:cobalt_shovel", {
 		max_drop_level = 0,
 		groupcaps = {
 			crumbly = {
-				times = {[2] = 3.00, [3] = 0.50},
+				times = {[3] = 0.50},
 				uses = 0,
 				maxlevel = 1,
 			},
@@ -81,7 +81,7 @@ minetest.register_craftitem(":kl_items:diamond_shovel", {
 		max_drop_level = 0,
 		groupcaps = {
 			crumbly = {
-				times = {[2] = 3.00, [3] = 0.20},
+				times = {[3] = 0.20},
 				uses = 0,
 				maxlevel = 1,
 			},
@@ -103,7 +103,7 @@ minetest.register_craftitem(":kl_items:mese_shovel", {
 		max_drop_level = 0,
 		groupcaps = {
 			crumbly = {
-				times = {[2] = 3.00, [3] = 0.20},
+				times = {[3] = 0.20},
 				uses = 0,
 				maxlevel = 1,
 			},
@@ -125,7 +125,7 @@ minetest.register_craftitem(":kl_items:ketchup_shovel", {
 		max_drop_level = 0,
 		groupcaps = {
 			crumbly = {
-				times = {[2] = 3.00, [3] = 0.70},
+				times = {[3] = 0.70},
 				uses = 0,
 				maxlevel = 1,
 			},
