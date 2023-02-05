@@ -30,6 +30,9 @@ function get_inventory_formspec(playername)
 		list[current_player;craft;4,1;3,3;]
 		list[current_player;craftpreview;8,2;1,1;]
 
+		listring[current_player;main]
+		listring[current_player;craft]
+
 		image[7,2;1,1;kl_arrow.png]
 		image[0.90,1.25;1.75,2.5;player.png]
 		box[0.10,0.10;9.35,0.4;blue]
@@ -62,7 +65,7 @@ minetest.register_on_joinplayer(function(player)
 	player:hud_set_hotbar_image("kl_gui_hotbar.png")
 	player:hud_set_hotbar_selected_image("kl_gui_hotbar_selected.png")
 	player:get_inventory():set_width("main", 9)
-	player:get_inventory():set_size("main", 36)
+	player:get_inventory():set_size("main", 9*3)
 	player:hud_set_hotbar_itemcount(9)
 
 	player:set_inventory_formspec(get_inventory_formspec(player:get_player_name()))

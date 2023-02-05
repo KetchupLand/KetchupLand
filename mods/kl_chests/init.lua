@@ -11,6 +11,9 @@ local chest_formspec = formspec_wrapper([[
 	list[current_player;main;0.5,4.5;9,2;9]
 	list[current_player;main;0.5,7;9,1;0]
 	list[nodemeta:${chestpos};main;0.5,1;9,3;]
+	
+	listring[current_player;main]
+	listring[nodemeta:${chestpos};main]
 
 	box[0.10,0.10;9.35,0.4;blue]
 	button_exit[9.5,0.10;0.4,0.4;close;x]
